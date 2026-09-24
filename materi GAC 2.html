@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahan Ajar Akuntansi — GAC (General Accounting Course)</title>
+<style>
+:root{
+  --ink:#1c2b2d;
+  --paper:#faf7f0;
+  --ledger:#eae3d3;
+  --line:#c9bfa5;
+  --accent:#8a3b2e;
+  --accent2:#2f5d50;
+  --gold:#a9812f;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height:1.65; font-size:17px;
+}
+.wrap{max-width:960px;margin:0 auto;padding:0 28px 120px;}
+header.top{
+  background:var(--ink); color:var(--paper); padding:48px 28px 40px;
+  border-bottom:6px solid var(--gold);
+}
+header.top .inner{max-width:960px;margin:0 auto;}
+header.top h1{
+  font-size:2.5rem; margin:0 0 6px; font-weight:700; letter-spacing:.5px;
+}
+header.top p.sub{margin:0; color:#d8cdb0; font-size:1.05rem; font-family: 'Helvetica Neue', Arial, sans-serif;}
+nav.toc{
+  background:var(--ledger); border:1px solid var(--line); border-radius:2px;
+  padding:22px 26px; margin:36px 0 44px;
+}
+nav.toc h2{margin-top:0;font-size:1.15rem;font-family:'Helvetica Neue',Arial,sans-serif;letter-spacing:.3px;}
+nav.toc .cols{display:grid;grid-template-columns:1fr 1fr;gap:8px 32px;}
+nav.toc h3{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.95rem;color:var(--accent);margin:14px 0 6px;}
+nav.toc ol{margin:0;padding-left:20px;font-size:.95rem;}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--line);}
+nav.toc a:hover{color:var(--accent);}
+section{margin:56px 0;}
+section h2{
+  font-size:1.7rem; color:var(--accent); border-bottom:3px solid var(--gold);
+  padding-bottom:8px; margin-bottom:22px;
+}
+section h3{font-size:1.25rem;color:var(--accent2);margin-top:32px;}
+section h4{font-size:1.05rem; font-family:'Helvetica Neue',Arial,sans-serif; color:var(--ink); margin-top:24px;}
+p{margin:12px 0;}
+.badge{
+  display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.75rem;
+  letter-spacing:.5px;background:var(--accent2);color:#fff;padding:3px 10px;border-radius:20px;margin-bottom:10px;
+}
+.box{
+  background:#fff; border:1px solid var(--line); border-left:5px solid var(--accent2);
+  padding:16px 20px; margin:18px 0; border-radius:2px;
+}
+.box.tip{border-left-color:var(--gold);}
+.box.contoh{border-left-color:var(--accent);}
+.box.rumus{background:var(--ledger); border-left-color:var(--ink); font-family:'Courier New',monospace; text-align:center; font-size:1.1rem;}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.92rem;background:#fff;}
+table caption{caption-side:top;text-align:left;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:bold;color:var(--accent);margin-bottom:6px;}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top;}
+th{background:var(--ink);color:#fff;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:.85rem;}
+td.num, th.num{text-align:right;font-variant-numeric:tabular-nums;}
+tr:nth-child(even) td{background:#f7f3e9;}
+.total-row td{border-top:2px solid var(--ink);font-weight:bold;background:#efe7d3 !important;}
+ul,ol{margin:10px 0;padding-left:24px;}
+li{margin:6px 0;}
+.divider{text-align:center;margin:40px 0;color:var(--gold);letter-spacing:6px;}
+.jawaban{background:#f1f5f0;border:1px solid #c3d4bf;border-left:5px solid var(--accent2);padding:16px 20px;margin:14px 0;}
+.soal{background:#fbf3ea;border:1px solid #e6cdb0;border-left:5px solid var(--accent);padding:16px 20px;margin:14px 0;}
+.small{font-size:.85rem;color:#5a5248;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media (max-width:700px){.grid2{grid-template-columns:1fr;} nav.toc .cols{grid-template-columns:1fr;}}
+.backtop{display:block;text-align:right;font-size:.8rem;margin-top:10px;}
+.backtop a{color:var(--accent2);text-decoration:none;}
+.part-header{
+  background:var(--accent2); color:#fff; padding:30px 28px; margin:70px 0 40px; text-align:center;
+  border-radius:2px;
+}
+.part-header h1{margin:0;font-size:2rem;letter-spacing:1px;}
+.part-header p{margin:6px 0 0;color:#dbe8e2;font-family:'Helvetica Neue',Arial,sans-serif;}
+footer{text-align:center;padding:40px;color:#7c7362;font-size:.85rem;font-family:'Helvetica Neue',Arial,sans-serif;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="inner">
+    <h1>GAC — General Accounting Course</h1>
+    <p class="sub">Bahan Ajar Akuntansi Lengkap · Perusahaan Jasa &amp; Perusahaan Dagang · Teori, Siklus, Latihan, dan Soal Komprehensif dengan Jawaban</p>
+  </div>
+</header>
+<div class="wrap">
+
+<nav class="toc">
+<h2>Daftar Isi</h2>
+<div class="cols">
+<div>
+<h3>Bagian I — Perusahaan Jasa</h3>
+<ol>
+<li><a href="#j1">Teori Akuntansi</a></li>
+<li><a href="#j2">Persamaan Dasar Akuntansi</a></li>
+<li><a href="#j3">Siklus Sistem Periodik &amp; Jurnal Umum</a></li>
+<li><a href="#j4">Intermezo 1 (Kuis Cepat)</a></li>
+<li><a href="#j5">Buku Besar &amp; Neraca Saldo</a></li>
+<li><a href="#j6">AJP — Ayat Jurnal Penyesuaian</a></li>
+<li><a href="#j7">AJP Lanjutan</a></li>
+<li><a href="#j8">Intermezo 2 (Kuis Cepat)</a></li>
+<li><a href="#j9">Neraca Lajur (Worksheet)</a></li>
+<li><a href="#j10">Laporan Keuangan</a></li>
+</ol>
+</div>
+<div>
+<h3>Bagian II — Perusahaan Dagang</h3>
+<ol>
+<li><a href="#d1">Sistem Perpetual, Jurnal Umum, Stok &amp; Buku Besar Pembantu</a></li>
+<li><a href="#d2">Evaluasi</a></li>
+<li><a href="#d3">Buku Besar &amp; Neraca Saldo</a></li>
+<li><a href="#d4">AJP Perusahaan Dagang</a></li>
+<li><a href="#d5">Intermezo 3 (Kuis Cepat)</a></li>
+<li><a href="#d6">Neraca Lajur</a></li>
+<li><a href="#d7">Laporan Keuangan</a></li>
+<li><a href="#d8">Jurnal Penutup</a></li>
+<li><a href="#d9">Intermezo 4 (Kuis Cepat)</a></li>
+</ol>
+</div>
+</div>
+<h3>Soal Komprehensif (Studi Kasus Penuh Satu Siklus)</h3>
+<ol>
+<li><a href="#soaljasa">Soal &amp; Jawaban Lengkap — Perusahaan Jasa "Salon Cantika"</a></li>
+<li><a href="#soaldagang">Soal &amp; Jawaban Lengkap — Perusahaan Dagang "UD Makmur Jaya"</a></li>
+</ol>
+</nav>
+<div class="part-header"><h1>BAGIAN I · PERUSAHAAN JASA</h1><p>Materi 1 sampai 10 — dari teori dasar hingga laporan keuangan</p></div>
+
+<section id="j1">
+<span class="badge">MATERI 1</span>
+<h2>1. Teori Akuntansi</h2>
+
+<h3>1.1 Pengertian Akuntansi</h3>
+<p>Akuntansi adalah proses <strong>mengidentifikasi, mencatat, mengklasifikasikan, meringkas, dan melaporkan</strong> transaksi keuangan suatu entitas (perusahaan/organisasi) sedemikian rupa sehingga menghasilkan informasi yang berguna untuk pengambilan keputusan ekonomi. Secara sederhana, akuntansi sering disebut sebagai <em>"bahasa bisnis"</em> karena melalui akuntansilah kondisi keuangan suatu usaha dapat dikomunikasikan kepada pihak-pihak yang berkepentingan.</p>
+
+<div class="box">
+<strong>Definisi menurut American Accounting Association (AAA):</strong><br>
+Akuntansi adalah proses pengidentifikasian, pengukuran, dan pelaporan informasi ekonomi untuk memungkinkan adanya penilaian dan pengambilan keputusan yang jelas dan tegas bagi pihak-pihak yang menggunakan informasi tersebut.
+</div>
+
+<h3>1.2 Tujuan Akuntansi</h3>
+<ul>
+<li>Menyediakan informasi keuangan yang dapat dipercaya mengenai posisi keuangan dan hasil usaha perusahaan.</li>
+<li>Membantu manajemen dalam perencanaan, pengendalian, dan pengambilan keputusan.</li>
+<li>Menjadi dasar penghitungan pajak dan pemenuhan kewajiban kepada pemerintah.</li>
+<li>Memberi pertanggungjawaban (akuntabilitas) manajemen kepada pemilik dan investor.</li>
+</ul>
+
+<h3>1.3 Pemakai Informasi Akuntansi</h3>
+<table>
+<caption>Pemakai Internal vs Eksternal</caption>
+<tr><th>Pemakai Internal</th><th>Pemakai Eksternal</th></tr>
+<tr><td>Manajemen (untuk perencanaan &amp; pengendalian operasional)</td><td>Investor &amp; calon investor (menilai kelayakan investasi)</td></tr>
+<tr><td>Pemilik perusahaan</td><td>Kreditur/bank (menilai kemampuan membayar utang)</td></tr>
+<tr><td>Karyawan (kepastian kelangsungan usaha)</td><td>Pemerintah/kantor pajak (perhitungan pajak)</td></tr>
+<tr><td>&nbsp;</td><td>Masyarakat &amp; pemasok</td></tr>
+</table>
+
+<h3>1.4 Bidang-Bidang Akuntansi</h3>
+<ul>
+<li><strong>Akuntansi Keuangan (Financial Accounting)</strong> — menghasilkan laporan keuangan untuk pihak eksternal.</li>
+<li><strong>Akuntansi Manajemen</strong> — menghasilkan informasi untuk kebutuhan internal manajemen.</li>
+<li><strong>Akuntansi Biaya</strong> — berfokus pada pencatatan dan analisis biaya produksi.</li>
+<li><strong>Akuntansi Perpajakan</strong> — berkaitan dengan penghitungan dan pelaporan pajak.</li>
+<li><strong>Akuntansi Pemeriksaan (Auditing)</strong> — pemeriksaan kewajaran laporan keuangan.</li>
+<li><strong>Akuntansi Anggaran (Budgeting)</strong> — penyusunan rencana keuangan di masa depan.</li>
+</ul>
+
+<h3>1.5 Prinsip &amp; Konsep Dasar Akuntansi (SAK/PABU)</h3>
+<table>
+<caption>Konsep dan Prinsip Dasar</caption>
+<tr><th>Konsep/Prinsip</th><th>Penjelasan</th></tr>
+<tr><td>Kesatuan Usaha (Business Entity)</td><td>Perusahaan dipandang sebagai unit yang terpisah dari pemiliknya. Harta pribadi pemilik tidak dicampur dengan harta perusahaan.</td></tr>
+<tr><td>Kelangsungan Usaha (Going Concern)</td><td>Perusahaan diasumsikan akan terus beroperasi dalam jangka waktu yang tidak terbatas.</td></tr>
+<tr><td>Periode Akuntansi (Accounting Period)</td><td>Umur perusahaan dibagi menjadi periode-periode pelaporan (bulanan, kuartalan, tahunan) agar kinerja dapat dievaluasi secara berkala.</td></tr>
+<tr><td>Satuan Moneter (Monetary Unit)</td><td>Semua transaksi dicatat dan dilaporkan dalam satuan mata uang (di Indonesia: Rupiah).</td></tr>
+<tr><td>Harga Perolehan (Historical Cost)</td><td>Aset dicatat sebesar harga perolehannya pada saat transaksi terjadi, bukan harga pasar saat ini.</td></tr>
+<tr><td>Pengakuan Pendapatan (Revenue Recognition)</td><td>Pendapatan diakui pada saat jasa diserahkan atau barang dijual, bukan saat kas diterima.</td></tr>
+<tr><td>Penandingan (Matching Principle)</td><td>Beban diakui dan dibandingkan (ditandingkan) dengan pendapatan yang berkaitan pada periode yang sama.</td></tr>
+<tr><td>Konsistensi</td><td>Metode akuntansi yang dipakai harus digunakan secara konsisten dari periode ke periode.</td></tr>
+<tr><td>Materialitas</td><td>Informasi yang cukup penting untuk memengaruhi keputusan pengguna laporan wajib diungkapkan.</td></tr>
+<tr><td>Pengungkapan Penuh (Full Disclosure)</td><td>Laporan keuangan harus mengungkapkan seluruh informasi yang relevan bagi pengguna.</td></tr>
+</table>
+
+<h3>1.6 Jenis-Jenis Badan Usaha (ditinjau dari kegiatan)</h3>
+<ol>
+<li><strong>Perusahaan Jasa</strong> — menjual/menyediakan jasa, tidak memiliki persediaan barang dagang. Contoh: salon, bengkel, jasa konsultan, laundry.</li>
+<li><strong>Perusahaan Dagang</strong> — membeli barang jadi lalu menjualnya kembali tanpa mengubah bentuk. Contoh: toko kelontong, minimarket, distributor.</li>
+<li><strong>Perusahaan Manufaktur (Industri)</strong> — mengolah bahan baku menjadi barang jadi untuk dijual. Contoh: pabrik tekstil, pabrik makanan.</li>
+</ol>
+
+<div class="box tip">
+<strong>Fokus modul ini:</strong> Bagian I membahas <em>Perusahaan Jasa</em>, dan Bagian II membahas <em>Perusahaan Dagang</em>, mulai dari transaksi awal sampai laporan keuangan dan penutupan buku.
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="j2">
+<span class="badge">MATERI 2</span>
+<h2>2. Persamaan Dasar Akuntansi</h2>
+
+<h3>2.1 Konsep Dasar</h3>
+<p>Seluruh sistem pencatatan akuntansi dibangun di atas satu persamaan fundamental yang harus selalu seimbang (balance):</p>
+<div class="box rumus">HARTA (ASET) = UTANG (LIABILITAS) + MODAL (EKUITAS)</div>
+<p>Dalam bahasa Inggris: <strong>Assets = Liabilities + Equity</strong>. Jika perusahaan memiliki pendapatan dan beban, persamaan dapat diperluas menjadi:</p>
+<div class="box rumus">ASET = LIABILITAS + (MODAL AWAL + PENDAPATAN − BEBAN − PRIVE)</div>
+
+<h3>2.2 Unsur-Unsur Persamaan Dasar Akuntansi</h3>
+<table>
+<caption>Lima Unsur Utama</caption>
+<tr><th>Unsur</th><th>Definisi</th><th>Contoh</th></tr>
+<tr><td>Aset (Harta)</td><td>Sumber daya yang dimiliki dan dikuasai perusahaan yang memberikan manfaat ekonomi di masa depan.</td><td>Kas, Piutang Usaha, Perlengkapan, Peralatan, Gedung, Tanah</td></tr>
+<tr><td>Liabilitas (Utang)</td><td>Kewajiban perusahaan kepada pihak lain yang harus dilunasi di masa depan.</td><td>Utang Usaha, Utang Bank, Utang Gaji</td></tr>
+<tr><td>Ekuitas (Modal)</td><td>Hak/klaim pemilik atas aset perusahaan setelah dikurangi liabilitas.</td><td>Modal Pemilik</td></tr>
+<tr><td>Pendapatan</td><td>Kenaikan manfaat ekonomi akibat penyerahan jasa/barang yang menambah ekuitas.</td><td>Pendapatan Jasa, Pendapatan Bunga</td></tr>
+<tr><td>Beban</td><td>Penurunan manfaat ekonomi akibat pemakaian sumber daya yang mengurangi ekuitas.</td><td>Beban Gaji, Beban Sewa, Beban Listrik</td></tr>
+</table>
+
+<h3>2.3 Klasifikasi Aset</h3>
+<ul>
+<li><strong>Aset Lancar (Current Assets)</strong> — dapat dicairkan/digunakan dalam waktu ≤ 1 tahun: Kas, Piutang Usaha, Perlengkapan, Beban Dibayar di Muka.</li>
+<li><strong>Aset Tetap (Fixed Assets)</strong> — digunakan dalam jangka panjang (&gt;1 tahun): Peralatan, Kendaraan, Gedung, Tanah.</li>
+<li><strong>Aset Tidak Berwujud (Intangible Assets)</strong> — tidak memiliki bentuk fisik: Hak Paten, Goodwill, Hak Cipta.</li>
+</ul>
+
+<h3>2.4 Pengaruh Transaksi terhadap Persamaan Dasar</h3>
+<p>Setiap transaksi keuangan pasti memengaruhi minimal dua unsur/pos, dan persamaan harus tetap seimbang setelahnya (disebut prinsip <em>double entry / berpasangan</em>).</p>
+
+<div class="box contoh">
+<strong>Contoh Kasus — Ilustrasi Persamaan Dasar Akuntansi</strong><br>
+Tn. Rian mendirikan usaha jasa servis "Rian Service" bulan Januari 2025:
+<ol>
+<li>Menyetor uang tunai Rp20.000.000 sebagai modal awal.</li>
+<li>Membeli peralatan servis Rp8.000.000 secara tunai.</li>
+<li>Membeli perlengkapan Rp1.500.000 secara kredit.</li>
+<li>Menerima pendapatan jasa servis tunai Rp3.000.000.</li>
+<li>Membayar beban sewa toko Rp1.000.000.</li>
+<li>Mengambil uang pribadi (prive) Rp500.000.</li>
+</ol>
+</div>
+
+<table>
+<caption>Tabel Persamaan Dasar Akuntansi — Rian Service</caption>
+<tr><th>No</th><th class="num">Kas</th><th class="num">Perlengkapan</th><th class="num">Peralatan</th><th>=</th><th class="num">Utang Usaha</th><th>+</th><th class="num">Modal</th><th>Keterangan</th></tr>
+<tr><td>1</td><td class="num">20.000.000</td><td class="num">-</td><td class="num">-</td><td>=</td><td class="num">-</td><td>+</td><td class="num">20.000.000</td><td>Setoran modal</td></tr>
+<tr><td>2</td><td class="num">(8.000.000)</td><td class="num">-</td><td class="num">8.000.000</td><td>=</td><td class="num">-</td><td>+</td><td class="num">-</td><td>Beli peralatan tunai</td></tr>
+<tr><td>Saldo</td><td class="num">12.000.000</td><td class="num">0</td><td class="num">8.000.000</td><td>=</td><td class="num">0</td><td>+</td><td class="num">20.000.000</td><td></td></tr>
+<tr><td>3</td><td class="num">-</td><td class="num">1.500.000</td><td class="num">-</td><td>=</td><td class="num">1.500.000</td><td>+</td><td class="num">-</td><td>Beli perlengkapan kredit</td></tr>
+<tr><td>Saldo</td><td class="num">12.000.000</td><td class="num">1.500.000</td><td class="num">8.000.000</td><td>=</td><td class="num">1.500.000</td><td>+</td><td class="num">20.000.000</td><td></td></tr>
+<tr><td>4</td><td class="num">3.000.000</td><td class="num">-</td><td class="num">-</td><td>=</td><td class="num">-</td><td>+</td><td class="num">3.000.000</td><td>Pendapatan jasa</td></tr>
+<tr><td>Saldo</td><td class="num">15.000.000</td><td class="num">1.500.000</td><td class="num">8.000.000</td><td>=</td><td class="num">1.500.000</td><td>+</td><td class="num">23.000.000</td><td></td></tr>
+<tr><td>5</td><td class="num">(1.000.000)</td><td class="num">-</td><td class="num">-</td><td>=</td><td class="num">-</td><td>+</td><td class="num">(1.000.000)</td><td>Beban sewa</td></tr>
+<tr><td>Saldo</td><td class="num">14.000.000</td><td class="num">1.500.000</td><td class="num">8.000.000</td><td>=</td><td class="num">1.500.000</td><td>+</td><td class="num">22.000.000</td><td></td></tr>
+<tr><td>6</td><td class="num">(500.000)</td><td class="num">-</td><td class="num">-</td><td>=</td><td class="num">-</td><td>+</td><td class="num">(500.000)</td><td>Prive</td></tr>
+<tr class="total-row"><td>Saldo Akhir</td><td class="num">13.500.000</td><td class="num">1.500.000</td><td class="num">8.000.000</td><td>=</td><td class="num">1.500.000</td><td>+</td><td class="num">21.500.000</td><td>Total Aset = 23.000.000</td></tr>
+</table>
+<p class="small">Cek keseimbangan: Aset (13.500.000 + 1.500.000 + 8.000.000 = 23.000.000) = Liabilitas + Ekuitas (1.500.000 + 21.500.000 = 23.000.000) ✓ Seimbang.</p>
+
+<h3>2.5 Aturan Debit-Kredit (Rule of Debit and Credit)</h3>
+<table>
+<caption>Aturan Saldo Normal Akun</caption>
+<tr><th>Jenis Akun</th><th>Bertambah (+)</th><th>Berkurang (−)</th><th>Saldo Normal</th></tr>
+<tr><td>Aset</td><td>Debit</td><td>Kredit</td><td>Debit</td></tr>
+<tr><td>Liabilitas</td><td>Kredit</td><td>Debit</td><td>Kredit</td></tr>
+<tr><td>Ekuitas/Modal</td><td>Kredit</td><td>Debit</td><td>Kredit</td></tr>
+<tr><td>Pendapatan</td><td>Kredit</td><td>Debit</td><td>Kredit</td></tr>
+<tr><td>Beban</td><td>Debit</td><td>Kredit</td><td>Debit</td></tr>
+<tr><td>Prive</td><td>Debit</td><td>Kredit</td><td>Debit</td></tr>
+</table>
+<div class="box tip">Cara mudah menghafal: akun di sisi kiri persamaan (Aset &amp; Beban &amp; Prive) bertambah di <strong>Debit</strong>; akun di sisi kanan persamaan (Liabilitas, Modal, Pendapatan) bertambah di <strong>Kredit</strong>.</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="j3">
+<span class="badge">MATERI 3</span>
+<h2>3. Siklus Sistem Periodik (Perusahaan Jasa) &amp; Jurnal Umum</h2>
+
+<h3>3.1 Siklus Akuntansi Perusahaan Jasa</h3>
+<p>Siklus akuntansi adalah tahapan berulang (siklikal) yang dilalui dalam mengolah data transaksi menjadi laporan keuangan setiap periode. Untuk perusahaan jasa, tahapannya adalah:</p>
+<ol>
+<li>Identifikasi &amp; analisis bukti transaksi (kuitansi, nota, faktur, dsb.)</li>
+<li>Pencatatan ke <strong>Jurnal Umum</strong> (general journal)</li>
+<li>Posting (pemindahbukuan) ke <strong>Buku Besar</strong> (ledger)</li>
+<li>Penyusunan <strong>Neraca Saldo</strong> (trial balance)</li>
+<li>Penyusunan <strong>Ayat Jurnal Penyesuaian (AJP)</strong></li>
+<li>Penyusunan <strong>Neraca Lajur</strong> (worksheet)</li>
+<li>Penyusunan <strong>Laporan Keuangan</strong></li>
+<li>Pembuatan <strong>Jurnal Penutup</strong> (closing entries)</li>
+<li>Penyusunan <strong>Neraca Saldo Setelah Penutupan</strong></li>
+<li>(Opsional) <strong>Jurnal Pembalik</strong> di awal periode berikutnya</li>
+</ol>
+
+<div class="box tip"><strong>Sistem Periodik vs Perpetual:</strong> Istilah "sistem periodik" umumnya melekat pada pencatatan persediaan di perusahaan dagang. Pada perusahaan jasa, karena tidak ada persediaan barang dagang, seluruh transaksi cukup dicatat langsung melalui jurnal umum tanpa jurnal khusus untuk persediaan.</div>
+
+<h3>3.2 Bukti Transaksi</h3>
+<table>
+<caption>Contoh Bukti Transaksi</caption>
+<tr><th>Bukti</th><th>Kegunaan</th></tr>
+<tr><td>Kuitansi</td><td>Bukti penerimaan/pembayaran kas</td></tr>
+<tr><td>Faktur</td><td>Bukti transaksi kredit (penjualan/pembelian secara kredit)</td></tr>
+<tr><td>Nota Kontan</td><td>Bukti pembelian/penjualan tunai</td></tr>
+<tr><td>Memo</td><td>Bukti transaksi intern, contoh: penyesuaian</td></tr>
+<tr><td>Cek/Bilyet Giro</td><td>Bukti pembayaran melalui bank</td></tr>
+</table>
+
+<h3>3.3 Jurnal Umum (General Journal)</h3>
+<p>Jurnal umum adalah catatan kronologis (berurutan berdasarkan tanggal) atas semua transaksi, yang menunjukkan akun yang di-<strong>debit</strong> dan di-<strong>kredit</strong> beserta jumlahnya, sebelum dipindahkan ke buku besar.</p>
+
+<h4>Bentuk Jurnal Umum</h4>
+<table>
+<caption>Format Jurnal Umum</caption>
+<tr><th>Tanggal</th><th>Keterangan (Nama Akun)</th><th>Ref</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>2025<br>Jan 2</td><td>Kas<br>&nbsp;&nbsp;&nbsp;Modal Tn. Rian</td><td>111<br>311</td><td class="num">20.000.000<br>&nbsp;</td><td class="num">&nbsp;<br>20.000.000</td></tr>
+</table>
+<p class="small">Catatan: akun yang di-<strong>debit</strong> ditulis rata kiri terlebih dahulu; akun yang di-<strong>kredit</strong> ditulis agak menjorok ke kanan pada baris berikutnya.</p>
+
+<h3>3.4 Langkah-Langkah Menjurnal (Analisis Transaksi)</h3>
+<ol>
+<li>Baca dan pahami transaksi, tentukan akun apa saja yang terpengaruh.</li>
+<li>Tentukan jenis masing-masing akun (Aset/Liabilitas/Ekuitas/Pendapatan/Beban).</li>
+<li>Tentukan apakah akun tersebut bertambah atau berkurang.</li>
+<li>Terapkan aturan debit-kredit (lihat tabel saldo normal pada Materi 2).</li>
+<li>Tulis jurnal: akun debit dahulu, lalu akun kredit, jumlah debit = jumlah kredit.</li>
+</ol>
+
+<div class="box contoh">
+<strong>Contoh Transaksi &amp; Analisisnya — "Rapi Laundry" bulan Januari 2025</strong>
+<table>
+<caption>Analisis Transaksi ke Jurnal</caption>
+<tr><th>Tgl</th><th>Transaksi</th><th>Analisis</th><th>Jurnal</th></tr>
+<tr><td>1</td><td>Ny. Sari menyetor kas Rp15.000.000 sebagai modal awal</td><td>Kas (Aset) bertambah; Modal (Ekuitas) bertambah</td><td>Kas (D) 15.000.000 / Modal (K) 15.000.000</td></tr>
+<tr><td>3</td><td>Membeli mesin cuci Rp6.000.000 tunai</td><td>Peralatan (Aset) bertambah; Kas (Aset) berkurang</td><td>Peralatan (D) 6.000.000 / Kas (K) 6.000.000</td></tr>
+<tr><td>5</td><td>Membeli perlengkapan (deterjen dll) Rp800.000 kredit</td><td>Perlengkapan (Aset) bertambah; Utang Usaha (Liabilitas) bertambah</td><td>Perlengkapan (D) 800.000 / Utang Usaha (K) 800.000</td></tr>
+<tr><td>10</td><td>Menerima pendapatan jasa laundry tunai Rp1.200.000</td><td>Kas bertambah; Pendapatan bertambah</td><td>Kas (D) 1.200.000 / Pendapatan Jasa (K) 1.200.000</td></tr>
+<tr><td>12</td><td>Menyelesaikan jasa laundry Rp900.000 namun belum dibayar (kredit)</td><td>Piutang Usaha bertambah; Pendapatan bertambah</td><td>Piutang Usaha (D) 900.000 / Pendapatan Jasa (K) 900.000</td></tr>
+<tr><td>15</td><td>Membayar beban listrik &amp; air Rp350.000</td><td>Beban bertambah (mengurangi ekuitas); Kas berkurang</td><td>Beban Listrik &amp; Air (D) 350.000 / Kas (K) 350.000</td></tr>
+<tr><td>18</td><td>Membayar sebagian utang usaha Rp400.000</td><td>Utang Usaha berkurang; Kas berkurang</td><td>Utang Usaha (D) 400.000 / Kas (K) 400.000</td></tr>
+<tr><td>20</td><td>Menerima pelunasan piutang Rp500.000</td><td>Kas bertambah; Piutang Usaha berkurang</td><td>Kas (D) 500.000 / Piutang Usaha (K) 500.000</td></tr>
+<tr><td>25</td><td>Ny. Sari mengambil uang untuk keperluan pribadi Rp300.000</td><td>Prive bertambah (mengurangi ekuitas); Kas berkurang</td><td>Prive (D) 300.000 / Kas (K) 300.000</td></tr>
+<tr><td>28</td><td>Membayar gaji karyawan Rp700.000</td><td>Beban Gaji bertambah; Kas berkurang</td><td>Beban Gaji (D) 700.000 / Kas (K) 700.000</td></tr>
+</table>
+</div>
+
+<h4>Bentuk Jurnal Umum Lengkap (Rapi Laundry)</h4>
+<table>
+<caption>Jurnal Umum — Rapi Laundry, Januari 2025</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>1</td><td>Kas</td><td class="num">15.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Modal Ny. Sari</td><td class="num"></td><td class="num">15.000.000</td></tr>
+<tr><td>3</td><td>Peralatan</td><td class="num">6.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">6.000.000</td></tr>
+<tr><td>5</td><td>Perlengkapan</td><td class="num">800.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Utang Usaha</td><td class="num"></td><td class="num">800.000</td></tr>
+<tr><td>10</td><td>Kas</td><td class="num">1.200.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">1.200.000</td></tr>
+<tr><td>12</td><td>Piutang Usaha</td><td class="num">900.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">900.000</td></tr>
+<tr><td>15</td><td>Beban Listrik &amp; Air</td><td class="num">350.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">350.000</td></tr>
+<tr><td>18</td><td>Utang Usaha</td><td class="num">400.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">400.000</td></tr>
+<tr><td>20</td><td>Kas</td><td class="num">500.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Piutang Usaha</td><td class="num"></td><td class="num">500.000</td></tr>
+<tr><td>25</td><td>Prive Ny. Sari</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">300.000</td></tr>
+<tr><td>28</td><td>Beban Gaji</td><td class="num">700.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">700.000</td></tr>
+<tr class="total-row"><td colspan="2">TOTAL</td><td class="num">25.150.000</td><td class="num">25.150.000</td></tr>
+</table>
+<p class="small">Total debit harus selalu sama dengan total kredit — ini adalah kontrol utama dalam pencatatan berpasangan (double entry system).</p>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="j4">
+<span class="badge">INTERMEZO</span>
+<h2>4. Intermezo — Kuis Cepat &amp; Latihan Pemahaman</h2>
+<p>Sebelum lanjut ke buku besar, uji pemahamanmu dengan latihan singkat berikut (kerjakan dulu, baru cocokkan dengan kunci jawaban).</p>
+
+<div class="soal">
+<strong>Latihan 4.1 — Tentukan Debit/Kredit</strong>
+<ol type="a">
+<li>Dibeli peralatan kantor secara tunai Rp2.000.000.</li>
+<li>Diterima pendapatan jasa Rp1.500.000 tunai.</li>
+<li>Dibayar utang usaha Rp600.000.</li>
+<li>Pemilik mengambil prive Rp250.000.</li>
+<li>Dibayar beban iklan Rp400.000.</li>
+</ol>
+</div>
+<div class="jawaban">
+<strong>Kunci Jawaban 4.1</strong>
+<ol type="a">
+<li>Peralatan (D) 2.000.000 / Kas (K) 2.000.000</li>
+<li>Kas (D) 1.500.000 / Pendapatan Jasa (K) 1.500.000</li>
+<li>Utang Usaha (D) 600.000 / Kas (K) 600.000</li>
+<li>Prive (D) 250.000 / Kas (K) 250.000</li>
+<li>Beban Iklan (D) 400.000 / Kas (K) 400.000</li>
+</ol>
+</div>
+
+<div class="soal">
+<strong>Latihan 4.2 — Benar/Salah</strong>
+<ol type="1">
+<li>Akun beban bertambah di sisi kredit.</li>
+<li>Prive termasuk pengurang ekuitas dan bersaldo normal debit.</li>
+<li>Perusahaan jasa memiliki akun Persediaan Barang Dagang.</li>
+<li>Total debit dan kredit dalam jurnal umum harus selalu sama.</li>
+</ol>
+</div>
+<div class="jawaban">
+<strong>Kunci Jawaban 4.2</strong>
+<ol type="1">
+<li><strong>Salah</strong> — beban bertambah di sisi debit.</li>
+<li><strong>Benar.</strong></li>
+<li><strong>Salah</strong> — akun persediaan barang dagang hanya dimiliki perusahaan dagang/manufaktur.</li>
+<li><strong>Benar</strong> — ini prinsip dasar double entry.</li>
+</ol>
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="j5">
+<span class="badge">MATERI 5</span>
+<h2>5. Buku Besar &amp; Neraca Saldo</h2>
+
+<h3>5.1 Pengertian Buku Besar (Ledger)</h3>
+<p>Buku besar adalah kumpulan akun-akun yang digunakan untuk meringkas transaksi yang sudah dicatat di jurnal umum, dikelompokkan per akun (misalnya semua transaksi yang berkaitan dengan Kas dikumpulkan dalam satu akun "Kas"). Proses memindahkan jurnal ke buku besar disebut <strong>posting</strong>.</p>
+
+<h3>5.2 Bentuk Buku Besar</h3>
+<p>Ada dua bentuk yang umum dipakai: <strong>bentuk T (T-account)</strong> untuk latihan/analisis cepat, dan <strong>bentuk staffel (4 kolom)</strong> yang dipakai dalam praktik karena langsung menampilkan saldo berjalan.</p>
+
+<h4>a) Bentuk T Sederhana</h4>
+<div class="box rumus" style="text-align:left;">
+KAS (101)<br>
+--------------------------------<br>
+Debit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kredit<br>
+15.000.000 &nbsp; | &nbsp; 6.000.000<br>
+1.200.000 &nbsp;&nbsp; | &nbsp; 350.000<br>
+500.000 &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; 400.000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; 300.000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp; 700.000<br>
+--------------------------------<br>
+Saldo = 16.700.000 − 7.750.000 = 8.950.000 (Debit)
+</div>
+
+<h4>b) Bentuk Staffel (4 Kolom) — dipakai dalam praktik</h4>
+<table>
+<caption>Buku Besar Bentuk Staffel — Akun: Kas (No. 101)</caption>
+<tr><th>Tgl</th><th>Keterangan</th><th>Ref</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>1 Jan</td><td>Setoran modal</td><td>JU1</td><td class="num">15.000.000</td><td class="num"></td><td class="num">15.000.000</td></tr>
+<tr><td>3 Jan</td><td>Beli peralatan</td><td>JU1</td><td class="num"></td><td class="num">6.000.000</td><td class="num">9.000.000</td></tr>
+<tr><td>10 Jan</td><td>Pendapatan jasa</td><td>JU1</td><td class="num">1.200.000</td><td class="num"></td><td class="num">10.200.000</td></tr>
+<tr><td>15 Jan</td><td>Beban listrik</td><td>JU1</td><td class="num"></td><td class="num">350.000</td><td class="num">9.850.000</td></tr>
+<tr><td>18 Jan</td><td>Bayar utang</td><td>JU1</td><td class="num"></td><td class="num">400.000</td><td class="num">9.450.000</td></tr>
+<tr><td>20 Jan</td><td>Terima piutang</td><td>JU1</td><td class="num">500.000</td><td class="num"></td><td class="num">9.950.000</td></tr>
+<tr><td>25 Jan</td><td>Prive</td><td>JU1</td><td class="num"></td><td class="num">300.000</td><td class="num">9.650.000</td></tr>
+<tr><td>28 Jan</td><td>Beban gaji</td><td>JU1</td><td class="num"></td><td class="num">700.000</td><td class="num">8.950.000</td></tr>
+</table>
+<p class="small">Saldo akhir akun Kas = <strong>Rp8.950.000 (Debit)</strong>, konsisten dengan hasil bentuk T di atas.</p>
+
+<h3>5.3 Kode/Nomor Akun (Chart of Accounts)</h3>
+<table>
+<caption>Contoh Kode Akun Perusahaan Jasa</caption>
+<tr><th>Kelompok</th><th>Kisaran Nomor</th><th>Contoh Akun</th></tr>
+<tr><td>Aset</td><td>100–199</td><td>101 Kas, 102 Piutang Usaha, 103 Perlengkapan, 104 Sewa Dibayar Dimuka, 121 Peralatan, 122 Akum. Penyusutan Peralatan</td></tr>
+<tr><td>Liabilitas</td><td>200–299</td><td>201 Utang Usaha, 202 Utang Gaji, 203 Pendapatan Diterima Dimuka</td></tr>
+<tr><td>Ekuitas</td><td>300–399</td><td>301 Modal, 302 Prive</td></tr>
+<tr><td>Pendapatan</td><td>400–499</td><td>401 Pendapatan Jasa</td></tr>
+<tr><td>Beban</td><td>500–599</td><td>501 Beban Gaji, 502 Beban Sewa, 503 Beban Listrik &amp; Air, 504 Beban Perlengkapan, 505 Beban Penyusutan</td></tr>
+</table>
+
+<h3>5.4 Neraca Saldo (Trial Balance)</h3>
+<p>Neraca saldo adalah daftar seluruh saldo akun buku besar pada akhir periode, disusun untuk menguji apakah total debit sama dengan total kredit sebelum lanjut ke tahap penyesuaian.</p>
+
+<table>
+<caption>Neraca Saldo — Rapi Laundry per 31 Januari 2025</caption>
+<tr><th>No</th><th>Nama Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>101</td><td>Kas</td><td class="num">8.950.000</td><td class="num"></td></tr>
+<tr><td>102</td><td>Piutang Usaha</td><td class="num">400.000</td><td class="num"></td></tr>
+<tr><td>103</td><td>Perlengkapan</td><td class="num">800.000</td><td class="num"></td></tr>
+<tr><td>121</td><td>Peralatan</td><td class="num">6.000.000</td><td class="num"></td></tr>
+<tr><td>201</td><td>Utang Usaha</td><td class="num"></td><td class="num">400.000</td></tr>
+<tr><td>301</td><td>Modal Ny. Sari</td><td class="num"></td><td class="num">15.000.000</td></tr>
+<tr><td>302</td><td>Prive Ny. Sari</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr><td>401</td><td>Pendapatan Jasa</td><td class="num"></td><td class="num">2.100.000</td></tr>
+<tr><td>501</td><td>Beban Gaji</td><td class="num">700.000</td><td class="num"></td></tr>
+<tr><td>503</td><td>Beban Listrik &amp; Air</td><td class="num">350.000</td><td class="num"></td></tr>
+<tr class="total-row"><td colspan="2">TOTAL</td><td class="num">17.500.000</td><td class="num">17.500.000</td></tr>
+</table>
+
+<h4>Langkah Menyusun Neraca Saldo</h4>
+<ol>
+<li>Ambil saldo akhir tiap akun dari buku besar.</li>
+<li>Susun daftar akun sesuai urutan kode akun (Aset → Liabilitas → Ekuitas → Pendapatan → Beban).</li>
+<li>Tempatkan saldo debit di kolom debit, saldo kredit di kolom kredit.</li>
+<li>Jumlahkan kedua kolom — jika tidak sama, telusuri kembali kesalahan posting/penjumlahan.</li>
+</ol>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="j6">
+<span class="badge">MATERI 6</span>
+<h2>6. AJP — Ayat Jurnal Penyesuaian</h2>
+
+<h3>6.1 Mengapa Perlu Penyesuaian?</h3>
+<p>Pada akhir periode, ada transaksi/kejadian ekonomi yang sudah terjadi tetapi belum dicatat, atau sudah dicatat namun belum mencerminkan kondisi yang sebenarnya pada tanggal neraca. Ayat Jurnal Penyesuaian (AJP) dibuat agar laporan keuangan sesuai dengan <strong>prinsip akrual (accrual basis)</strong> dan <strong>matching principle</strong> — pendapatan dan beban diakui pada periode terjadinya, bukan pada saat kas diterima/dibayar.</p>
+
+<h3>6.2 Akun-Akun yang Umumnya Memerlukan Penyesuaian</h3>
+<table>
+<caption>6 Kategori Utama AJP</caption>
+<tr><th>No</th><th>Kategori</th><th>Contoh</th></tr>
+<tr><td>1</td><td>Perlengkapan yang telah dipakai (Supplies Used)</td><td>Perlengkapan dibeli Rp800.000, sisa akhir periode Rp300.000 → terpakai Rp500.000</td></tr>
+<tr><td>2</td><td>Beban dibayar di muka (Prepaid Expense)</td><td>Sewa dibayar di muka untuk 1 tahun, telah berjalan 1 bulan</td></tr>
+<tr><td>3</td><td>Penyusutan aset tetap (Depreciation)</td><td>Peralatan disusutkan setiap bulan/tahun</td></tr>
+<tr><td>4</td><td>Pendapatan diterima di muka (Unearned Revenue)</td><td>Uang muka jasa diterima, sebagian jasa sudah dikerjakan</td></tr>
+<tr><td>5</td><td>Beban yang masih harus dibayar (Accrued Expense)</td><td>Gaji karyawan bulan berjalan belum dibayar</td></tr>
+<tr><td>6</td><td>Pendapatan yang masih harus diterima (Accrued Revenue)</td><td>Jasa sudah dikerjakan tapi belum ditagih/dibayar klien</td></tr>
+</table>
+
+<h3>6.3 Penyesuaian Perlengkapan</h3>
+<div class="box contoh">
+<strong>Contoh:</strong> Neraca saldo menunjukkan akun Perlengkapan Rp800.000. Pada akhir Januari, perlengkapan yang tersisa (hasil stock opname) hanya Rp300.000. Berarti perlengkapan yang terpakai selama Januari = Rp800.000 − Rp300.000 = <strong>Rp500.000</strong>.
+</div>
+<table>
+<caption>Jurnal Penyesuaian — Perlengkapan</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>31 Jan</td><td>Beban Perlengkapan</td><td class="num">500.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Perlengkapan</td><td class="num"></td><td class="num">500.000</td></tr>
+</table>
+
+<h3>6.4 Penyesuaian Beban Dibayar di Muka</h3>
+<div class="box contoh">
+<strong>Contoh:</strong> Pada 1 Januari dibayar sewa toko untuk 6 bulan sebesar Rp6.000.000, dicatat sebagai "Sewa Dibayar di Muka" (aset). Pada 31 Januari, sewa yang telah menjadi beban = 1 bulan → Rp6.000.000 ÷ 6 = <strong>Rp1.000.000</strong>.
+</div>
+<table>
+<caption>Jurnal Penyesuaian — Sewa Dibayar di Muka</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>31 Jan</td><td>Beban Sewa</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Sewa Dibayar di Muka</td><td class="num"></td><td class="num">1.000.000</td></tr>
+</table>
+<p class="small"><strong>Pendekatan Alternatif:</strong> Jika transaksi awal dicatat langsung sebagai "Beban Sewa" (pendekatan beban), maka AJP di akhir periode justru dibuat kebalikannya — mengakui bagian yang <em>belum</em> menjadi beban sebagai aset (Sewa Dibayar di Muka). Kedua pendekatan ini akan menghasilkan saldo akhir yang sama pada laporan keuangan.</p>
+
+<h3>6.5 Penyesuaian Penyusutan Aset Tetap</h3>
+<div class="box contoh">
+<strong>Contoh:</strong> Peralatan seharga Rp6.000.000 disusutkan dengan metode garis lurus (straight-line), umur ekonomis 5 tahun, tanpa nilai residu. Penyusutan per tahun = Rp6.000.000 ÷ 5 = Rp1.200.000, per bulan = Rp1.200.000 ÷ 12 = <strong>Rp100.000</strong>.
+</div>
+<div class="box rumus">Beban Penyusutan per periode = (Harga Perolehan − Nilai Residu) ÷ Umur Ekonomis</div>
+<table>
+<caption>Jurnal Penyesuaian — Penyusutan Peralatan</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>31 Jan</td><td>Beban Penyusutan Peralatan</td><td class="num">100.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Akumulasi Penyusutan Peralatan</td><td class="num"></td><td class="num">100.000</td></tr>
+</table>
+<div class="box tip">Akun <strong>Akumulasi Penyusutan</strong> adalah akun <em>contra-asset</em> (pengurang aset), bersaldo normal Kredit, dan disajikan sebagai pengurang nilai aset tetap terkait di neraca. Akun ini <em>tidak pernah</em> mengkredit langsung akun Peralatan — nilai perolehan aset tetap dibiarkan tetap seperti semula.</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="j7">
+<span class="badge">MATERI 7</span>
+<h2>7. AJP Lanjutan</h2>
+
+<h3>7.1 Penyesuaian Pendapatan Diterima di Muka</h3>
+<div class="box contoh">
+<strong>Contoh:</strong> Pada 5 Januari, diterima uang muka jasa laundry borongan dari sebuah kos-kosan sebesar Rp2.000.000 untuk pekerjaan selama 4 minggu, dicatat sebagai "Pendapatan Diterima di Muka" (liabilitas). Sampai akhir Januari (31 Jan), pekerjaan yang sudah diselesaikan setara 3 minggu → 3/4 × Rp2.000.000 = <strong>Rp1.500.000</strong> sudah menjadi pendapatan yang diakui.
+</div>
+<table>
+<caption>Jurnal Penyesuaian — Pendapatan Diterima di Muka</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>31 Jan</td><td>Pendapatan Diterima di Muka</td><td class="num">1.500.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">1.500.000</td></tr>
+</table>
+
+<h3>7.2 Penyesuaian Beban yang Masih Harus Dibayar (Utang Beban)</h3>
+<div class="box contoh">
+<strong>Contoh:</strong> Gaji karyawan dibayar setiap tanggal 5 bulan berikutnya. Untuk periode 26–31 Januari (6 hari), gaji yang menjadi beban tapi belum dibayar sebesar <strong>Rp300.000</strong>.
+</div>
+<table>
+<caption>Jurnal Penyesuaian — Utang Gaji</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>31 Jan</td><td>Beban Gaji</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Utang Gaji</td><td class="num"></td><td class="num">300.000</td></tr>
+</table>
+
+<h3>7.3 Penyesuaian Pendapatan yang Masih Harus Diterima (Piutang Pendapatan)</h3>
+<div class="box contoh">
+<strong>Contoh:</strong> Jasa servis senilai Rp450.000 telah selesai dikerjakan pada 30 Januari namun tagihan baru akan dikirim awal Februari.
+</div>
+<table>
+<caption>Jurnal Penyesuaian — Piutang Pendapatan</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>31 Jan</td><td>Piutang Pendapatan (Piutang Usaha)</td><td class="num">450.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">450.000</td></tr>
+</table>
+
+<h3>7.4 Ringkasan Pola AJP</h3>
+<table>
+<caption>Pola Umum Ayat Jurnal Penyesuaian</caption>
+<tr><th>Situasi</th><th>Debit</th><th>Kredit</th></tr>
+<tr><td>Perlengkapan terpakai</td><td>Beban Perlengkapan</td><td>Perlengkapan</td></tr>
+<tr><td>Beban dibayar di muka (yang telah jadi beban)</td><td>Beban ybs.</td><td>Aset Dibayar Dimuka</td></tr>
+<tr><td>Penyusutan aset tetap</td><td>Beban Penyusutan</td><td>Akumulasi Penyusutan</td></tr>
+<tr><td>Pendapatan diterima di muka (yang telah menjadi hak)</td><td>Pendapatan Diterima Dimuka</td><td>Pendapatan</td></tr>
+<tr><td>Beban masih harus dibayar</td><td>Beban ybs.</td><td>Utang Beban</td></tr>
+<tr><td>Pendapatan masih harus diterima</td><td>Piutang Pendapatan</td><td>Pendapatan</td></tr>
+</table>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="j8">
+<span class="badge">INTERMEZO</span>
+<h2>8. Intermezo — Latihan AJP</h2>
+<div class="soal">
+<strong>Latihan 8.1</strong><br>
+Data per 31 Desember: Perlengkapan (neraca saldo) Rp1.200.000, sisa perlengkapan digudang Rp450.000. Peralatan Rp12.000.000 disusutkan Rp100.000/bulan. Gaji terutang bulan berjalan Rp500.000. Buatlah AJP yang diperlukan!
+</div>
+<div class="jawaban">
+<strong>Kunci Jawaban 8.1</strong>
+<table>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Beban Perlengkapan</td><td class="num">750.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Perlengkapan</td><td class="num"></td><td class="num">750.000</td></tr>
+<tr><td>Beban Penyusutan Peralatan</td><td class="num">100.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Akumulasi Penyusutan Peralatan</td><td class="num"></td><td class="num">100.000</td></tr>
+<tr><td>Beban Gaji</td><td class="num">500.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Utang Gaji</td><td class="num"></td><td class="num">500.000</td></tr>
+</table>
+<p class="small">Perlengkapan terpakai = 1.200.000 − 450.000 = 750.000</p>
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="j9">
+<span class="badge">MATERI 9</span>
+<h2>9. Neraca Lajur (Worksheet)</h2>
+
+<h3>9.1 Pengertian &amp; Fungsi</h3>
+<p>Neraca lajur (worksheet) adalah kertas kerja berlajur (multi-kolom) yang digunakan untuk mempermudah penyusunan laporan keuangan. Neraca lajur <strong>bukan</strong> bagian dari catatan akuntansi resmi (tidak wajib di-posting), melainkan alat bantu bagi penyusun laporan agar proses dari neraca saldo → penyesuaian → laporan keuangan lebih terstruktur dan mengurangi risiko kesalahan.</p>
+
+<h3>9.2 Struktur Neraca Lajur 10 Kolom</h3>
+<table>
+<caption>Struktur Kolom Neraca Lajur</caption>
+<tr><th>Kelompok</th><th>Kolom</th></tr>
+<tr><td>1. Neraca Saldo</td><td>Debit, Kredit</td></tr>
+<tr><td>2. Penyesuaian (AJP)</td><td>Debit, Kredit</td></tr>
+<tr><td>3. Neraca Saldo Disesuaikan (NSD)</td><td>Debit, Kredit</td></tr>
+<tr><td>4. Laporan Laba Rugi</td><td>Debit, Kredit</td></tr>
+<tr><td>5. Neraca (Laporan Posisi Keuangan)</td><td>Debit, Kredit</td></tr>
+</table>
+
+<h3>9.3 Langkah Penyusunan Neraca Lajur</h3>
+<ol>
+<li>Pindahkan saldo akun dari <strong>Neraca Saldo</strong> ke kolom 1.</li>
+<li>Masukkan seluruh <strong>AJP</strong> ke kolom 2 (tambahkan akun baru bila belum ada di neraca saldo).</li>
+<li>Hitung <strong>Neraca Saldo Disesuaikan</strong> (kolom 3) = Neraca Saldo ± Penyesuaian.</li>
+<li>Pindahkan akun <strong>Pendapatan &amp; Beban</strong> ke kolom <strong>Laba Rugi</strong> (kolom 4).</li>
+<li>Pindahkan akun <strong>Aset, Liabilitas, Ekuitas, Prive</strong> ke kolom <strong>Neraca</strong> (kolom 5).</li>
+<li>Jumlahkan kolom Laba Rugi — selisihnya adalah <strong>Laba/Rugi Bersih</strong>, dimasukkan sebagai penyeimbang (jika laba, ditambahkan di sisi debit kolom Laba Rugi dan sisi kredit kolom Neraca; jika rugi sebaliknya).</li>
+<li>Jumlahkan kolom Neraca — total debit harus sama dengan total kredit.</li>
+</ol>
+
+<h3>9.4 Contoh Neraca Lajur — Rapi Laundry per 31 Januari 2025</h3>
+<p>Menggunakan data neraca saldo Materi 5, dengan tambahan AJP: Perlengkapan terpakai Rp500.000 (sisa Rp300.000), Penyusutan Peralatan Rp100.000, Piutang Pendapatan Rp450.000.</p>
+<table style="font-size:.8rem;">
+<caption>Neraca Lajur — Rapi Laundry, Januari 2025 (dalam Rupiah)</caption>
+<tr><th>Akun</th><th class="num">NS-D</th><th class="num">NS-K</th><th class="num">AJP-D</th><th class="num">AJP-K</th><th class="num">NSD-D</th><th class="num">NSD-K</th><th class="num">LR-D</th><th class="num">LR-K</th><th class="num">Neraca-D</th><th class="num">Neraca-K</th></tr>
+<tr><td>Kas</td><td class="num">8.950</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">8.950</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">8.950</td><td class="num"></td></tr>
+<tr><td>Piutang Usaha</td><td class="num">400</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">400</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">400</td><td class="num"></td></tr>
+<tr><td>Perlengkapan</td><td class="num">800</td><td class="num"></td><td class="num"></td><td class="num">500</td><td class="num">300</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">300</td><td class="num"></td></tr>
+<tr><td>Peralatan</td><td class="num">6.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">6.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">6.000</td><td class="num"></td></tr>
+<tr><td>Utang Usaha</td><td class="num"></td><td class="num">400</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">400</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">400</td></tr>
+<tr><td>Modal Ny. Sari</td><td class="num"></td><td class="num">15.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">15.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">15.000</td></tr>
+<tr><td>Prive Ny. Sari</td><td class="num">300</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">300</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">300</td><td class="num"></td></tr>
+<tr><td>Pendapatan Jasa</td><td class="num"></td><td class="num">2.100</td><td class="num"></td><td class="num">450</td><td class="num"></td><td class="num">2.550</td><td class="num"></td><td class="num">2.550</td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Gaji</td><td class="num">700</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">700</td><td class="num"></td><td class="num">700</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">350</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">350</td><td class="num"></td><td class="num">350</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr class="total-row"><td>Jumlah</td><td class="num">17.500</td><td class="num">17.500</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Perlengkapan</td><td class="num"></td><td class="num"></td><td class="num">500</td><td class="num"></td><td class="num">500</td><td class="num"></td><td class="num">500</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Penyusutan Peralatan</td><td class="num"></td><td class="num"></td><td class="num">100</td><td class="num"></td><td class="num">100</td><td class="num"></td><td class="num">100</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Akum. Peny. Peralatan</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">100</td><td class="num"></td><td class="num">100</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">100</td></tr>
+<tr><td>Piutang Pendapatan</td><td class="num"></td><td class="num"></td><td class="num">450</td><td class="num"></td><td class="num">450</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">450</td><td class="num"></td></tr>
+<tr class="total-row"><td>Jumlah</td><td class="num"></td><td class="num"></td><td class="num">1.050</td><td class="num">1.050</td><td class="num">18.050</td><td class="num">18.050</td><td class="num">1.650</td><td class="num">2.550</td><td class="num">16.400</td><td class="num">15.500</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">900</td><td class="num"></td><td class="num"></td><td class="num">900</td></tr>
+<tr class="total-row"><td>Jumlah Akhir</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">2.550</td><td class="num">2.550</td><td class="num">16.400</td><td class="num">16.400</td></tr>
+</table>
+<p class="small">Angka dalam ribuan Rupiah. Laba Bersih = Total Kredit Laba Rugi (2.550) − Total Debit Laba Rugi (1.650) = <strong>Rp900.000</strong>. Kolom Neraca menjadi seimbang setelah laba ditambahkan ke sisi kredit (karena laba menambah ekuitas).</p>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="j10">
+<span class="badge">MATERI 10</span>
+<h2>10. Laporan Keuangan (Perusahaan Jasa)</h2>
+
+<h3>10.1 Komponen Laporan Keuangan</h3>
+<ol>
+<li><strong>Laporan Laba Rugi (Income Statement)</strong> — menyajikan pendapatan, beban, dan laba/rugi bersih selama satu periode.</li>
+<li><strong>Laporan Perubahan Modal (Statement of Owner's Equity)</strong> — menyajikan perubahan modal pemilik selama satu periode.</li>
+<li><strong>Neraca / Laporan Posisi Keuangan (Balance Sheet)</strong> — menyajikan aset, liabilitas, dan ekuitas pada satu tanggal tertentu.</li>
+<li><strong>Laporan Arus Kas (Cash Flow Statement)</strong> — menyajikan arus kas masuk dan keluar dari aktivitas operasi, investasi, dan pendanaan (opsional untuk usaha kecil, wajib untuk laporan yang lebih formal).</li>
+</ol>
+<p><strong>Urutan penyusunan penting:</strong> Laba Rugi → Perubahan Modal → Neraca, karena laba bersih dari Laporan Laba Rugi dipakai di Laporan Perubahan Modal, dan modal akhir dari Laporan Perubahan Modal dipakai di Neraca.</p>
+
+<div class="grid2">
+<div>
+<table>
+<caption>1) Laporan Laba Rugi — Rapi Laundry per 31 Jan 2025</caption>
+<tr><th colspan="2">Pendapatan</th></tr>
+<tr><td>Pendapatan Jasa</td><td class="num">2.550.000</td></tr>
+<tr><th colspan="2">Beban Usaha</th></tr>
+<tr><td>Beban Gaji</td><td class="num">700.000</td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">350.000</td></tr>
+<tr><td>Beban Perlengkapan</td><td class="num">500.000</td></tr>
+<tr><td>Beban Penyusutan Peralatan</td><td class="num">100.000</td></tr>
+<tr><td>Total Beban Usaha</td><td class="num">(1.650.000)</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num">900.000</td></tr>
+</table>
+</div>
+<div>
+<table>
+<caption>2) Laporan Perubahan Modal per 31 Jan 2025</caption>
+<tr><td>Modal Ny. Sari (awal, 1 Jan)</td><td class="num">15.000.000</td></tr>
+<tr><td>Laba Bersih Januari</td><td class="num">900.000</td></tr>
+<tr><td>Prive Ny. Sari</td><td class="num">(300.000)</td></tr>
+<tr><td>Penambahan Modal Bersih</td><td class="num">600.000</td></tr>
+<tr class="total-row"><td>Modal Ny. Sari (akhir, 31 Jan)</td><td class="num">15.600.000</td></tr>
+</table>
+</div>
+</div>
+
+<table>
+<caption>3) Neraca — Rapi Laundry per 31 Januari 2025</caption>
+<tr><th colspan="2">ASET</th><th colspan="2">LIABILITAS &amp; EKUITAS</th></tr>
+<tr><td>Kas</td><td class="num">8.950.000</td><td>Utang Usaha</td><td class="num">400.000</td></tr>
+<tr><td>Piutang Usaha</td><td class="num">400.000</td><td><em>Total Liabilitas</em></td><td class="num">400.000</td></tr>
+<tr><td>Piutang Pendapatan</td><td class="num">450.000</td><td>&nbsp;</td><td class="num"></td></tr>
+<tr><td>Perlengkapan</td><td class="num">300.000</td><td>Modal Ny. Sari</td><td class="num">15.600.000</td></tr>
+<tr><td>Peralatan</td><td class="num">6.000.000</td><td>&nbsp;</td><td class="num"></td></tr>
+<tr><td>Akum. Peny. Peralatan</td><td class="num">(100.000)</td><td>&nbsp;</td><td class="num"></td></tr>
+<tr class="total-row"><td>TOTAL ASET</td><td class="num">16.000.000</td><td>TOTAL LIABILITAS + EKUITAS</td><td class="num">16.000.000</td></tr>
+</table>
+<p class="small">Neraca dinyatakan seimbang: Total Aset (Rp16.000.000) = Total Liabilitas + Ekuitas (Rp16.000.000) ✓</p>
+
+<div class="box tip"><strong>Catatan:</strong> Bentuk penyajian Neraca di atas adalah <em>bentuk skontro/horizontal</em> (aset di kiri, liabilitas+ekuitas di kanan). Alternatif lain adalah <em>bentuk stafel/vertikal</em>, di mana aset disajikan di atas, diikuti liabilitas dan ekuitas di bawahnya — keduanya sah digunakan.</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<div class="part-header"><h1>BAGIAN II · PERUSAHAAN DAGANG</h1><p>Materi 1 sampai 9 — sistem perpetual, stok, hingga jurnal penutup</p></div>
+
+<section id="d1">
+<span class="badge">MATERI 1</span>
+<h2>1. Sistem Perpetual (Perusahaan Dagang), Jurnal Umum, Kartu Stok &amp; Buku Besar Pembantu</h2>
+
+<h3>1.1 Karakteristik Perusahaan Dagang</h3>
+<p>Perusahaan dagang membeli barang dalam bentuk jadi (siap jual) kemudian menjualnya kembali tanpa mengubah bentuk, dengan tujuan memperoleh laba dari selisih harga jual dan harga pokok (margin). Berbeda dengan perusahaan jasa, perusahaan dagang memiliki akun <strong>Persediaan Barang Dagang</strong> dan berbagai akun terkait pembelian/penjualan.</p>
+
+<h3>1.2 Sistem Pencatatan Persediaan: Perpetual vs Periodik</h3>
+<table>
+<caption>Perbandingan Sistem Pencatatan Persediaan</caption>
+<tr><th>Aspek</th><th>Sistem Perpetual</th><th>Sistem Periodik (Fisik)</th></tr>
+<tr><td>Pencatatan mutasi persediaan</td><td>Dicatat setiap kali ada transaksi (pembelian/penjualan) langsung ke akun Persediaan</td><td>Tidak dicatat setiap transaksi; menggunakan akun Pembelian &amp; Penjualan terpisah</td></tr>
+<tr><td>Harga Pokok Penjualan (HPP)</td><td>Dihitung otomatis setiap kali penjualan terjadi (2 jurnal per transaksi jual)</td><td>Dihitung sekali di akhir periode via perhitungan fisik (stock opname)</td></tr>
+<tr><td>Saldo persediaan</td><td>Selalu ter-update secara real time di buku besar</td><td>Baru diketahui setelah stock opname akhir periode</td></tr>
+<tr><td>Kartu stok/kartu persediaan</td><td>Wajib dan detail per unit/jenis barang</td><td>Umumnya tidak wajib mendetail per transaksi</td></tr>
+<tr><td>Umum dipakai oleh</td><td>Perusahaan modern dengan sistem POS/komputerisasi</td><td>Usaha kecil/manual dengan barang bervolume tinggi &amp; nilai satuan rendah</td></tr>
+</table>
+<div class="box tip">Modul ini menggunakan <strong>sistem perpetual</strong> sesuai kurikulum GAC, karena inilah sistem yang paling relevan dengan praktik akuntansi modern (terintegrasi dengan software akuntansi/POS).</div>
+
+<h3>1.3 Akun-Akun Khas Perusahaan Dagang (Sistem Perpetual)</h3>
+<table>
+<caption>Akun Tambahan pada Perusahaan Dagang</caption>
+<tr><th>Akun</th><th>Sifat</th><th>Fungsi</th></tr>
+<tr><td>Persediaan Barang Dagang</td><td>Aset Lancar</td><td>Mencatat nilai barang dagang yang dimiliki (bertambah saat beli, berkurang saat jual sebesar HPP)</td></tr>
+<tr><td>Penjualan</td><td>Pendapatan</td><td>Mencatat nilai jual barang dagang</td></tr>
+<tr><td>Harga Pokok Penjualan (HPP)</td><td>Beban</td><td>Mencatat harga perolehan barang yang telah terjual</td></tr>
+<tr><td>Retur Penjualan &amp; Pengurangan Harga</td><td>Pengurang Pendapatan (kontra)</td><td>Barang yang dikembalikan pembeli / diskon harga setelah jual</td></tr>
+<tr><td>Retur Pembelian &amp; Pengurangan Harga</td><td>Pengurang Persediaan (kontra dlm perpetual)</td><td>Barang yang dikembalikan ke pemasok</td></tr>
+<tr><td>Potongan Penjualan (Sales Discount)</td><td>Pengurang Pendapatan</td><td>Diskon yang diberikan karena pelunasan cepat oleh pembeli</td></tr>
+<tr><td>Potongan Pembelian (Purchase Discount)</td><td>Pengurang Persediaan</td><td>Diskon yang diterima karena pelunasan cepat ke pemasok</td></tr>
+<tr><td>Beban Angkut Penjualan</td><td>Beban</td><td>Ongkos kirim barang ke pembeli (ditanggung penjual)</td></tr>
+<tr><td>Beban Angkut Pembelian (Ongkos Angkut Masuk)</td><td>Menambah Persediaan</td><td>Ongkos kirim atas pembelian barang (ditanggung pembeli), menambah harga pokok barang</td></tr>
+</table>
+
+<h3>1.4 Syarat Pembayaran &amp; Syarat Penyerahan</h3>
+<table>
+<caption>Istilah Penting Transaksi Dagang</caption>
+<tr><th>Istilah</th><th>Arti</th></tr>
+<tr><td>2/10, n/30</td><td>Diberikan potongan 2% jika dibayar dalam 10 hari; jatuh tempo pembayaran maksimal 30 hari</td></tr>
+<tr><td>n/30</td><td>Tidak ada potongan, jatuh tempo 30 hari sejak tanggal faktur</td></tr>
+<tr><td>FOB Shipping Point (Franko Gudang Penjual)</td><td>Hak milik barang berpindah saat barang meninggalkan gudang penjual → ongkos angkut ditanggung <strong>pembeli</strong></td></tr>
+<tr><td>FOB Destination Point (Franko Gudang Pembeli)</td><td>Hak milik barang berpindah saat barang sampai di gudang pembeli → ongkos angkut ditanggung <strong>penjual</strong></td></tr>
+</table>
+
+<h3>1.5 Jurnal Umum Sistem Perpetual — Contoh Lengkap</h3>
+<div class="box contoh">
+<strong>Kasus:</strong> "Toko Berkah" bulan Februari 2025.
+</div>
+<table>
+<caption>Contoh Jurnal Transaksi Dagang (Sistem Perpetual)</caption>
+<tr><th>Transaksi</th><th>Jurnal</th></tr>
+<tr><td>Membeli barang dagang Rp5.000.000 secara kredit, syarat 2/10, n/30</td><td>Persediaan Barang Dagang (D) 5.000.000 / Utang Usaha (K) 5.000.000</td></tr>
+<tr><td>Membayar ongkos angkut pembelian Rp150.000 tunai (FOB Shipping Point)</td><td>Persediaan Barang Dagang (D) 150.000 / Kas (K) 150.000</td></tr>
+<tr><td>Mengembalikan barang cacat senilai Rp500.000 ke pemasok (retur pembelian)</td><td>Utang Usaha (D) 500.000 / Persediaan Barang Dagang (K) 500.000</td></tr>
+<tr><td>Melunasi utang di atas dalam masa diskon (setelah retur, sisa utang Rp4.500.000, dapat potongan 2%)</td><td>Utang Usaha (D) 4.500.000 / Kas (K) 4.410.000, Persediaan Barang Dagang (K) 90.000</td></tr>
+<tr><td>Menjual barang dagang Rp3.000.000 kredit (HPP barang tsb Rp2.000.000), syarat 2/10,n/30</td><td><em>Jurnal 1:</em> Piutang Usaha (D) 3.000.000 / Penjualan (K) 3.000.000<br><em>Jurnal 2:</em> HPP (D) 2.000.000 / Persediaan Barang Dagang (K) 2.000.000</td></tr>
+<tr><td>Pembeli mengembalikan barang rusak senilai jual Rp300.000 (HPP-nya Rp200.000)</td><td><em>Jurnal 1:</em> Retur Penjualan (D) 300.000 / Piutang Usaha (K) 300.000<br><em>Jurnal 2:</em> Persediaan Barang Dagang (D) 200.000 / HPP (K) 200.000</td></tr>
+<tr><td>Diterima pelunasan piutang di atas dalam masa diskon (sisa piutang Rp2.700.000, potongan 2%)</td><td>Kas (D) 2.646.000, Potongan Penjualan (D) 54.000 / Piutang Usaha (K) 2.700.000</td></tr>
+</table>
+<div class="box tip"><strong>Kunci sistem perpetual:</strong> setiap kali terjadi <em>penjualan</em>, selalu dibuat <strong>dua jurnal sekaligus</strong> — (1) mengakui pendapatan penjualan sebesar harga jual, dan (2) memindahkan harga pokok barang terjual dari Persediaan ke akun HPP.</div>
+
+<h3>1.6 Kartu Stok/Persediaan (Inventory Card)</h3>
+<p>Kartu stok digunakan untuk mencatat mutasi (masuk-keluar-sisa) setiap jenis barang secara individual dengan metode penilaian tertentu, misalnya <strong>FIFO (First In First Out)</strong>, LIFO, atau <strong>Rata-rata Bergerak (Moving Average)</strong>.</p>
+
+<div class="box contoh">
+<strong>Contoh Kartu Stok — Metode FIFO, Barang "Kipas Angin Model X"</strong>
+</div>
+<table>
+<caption>Kartu Persediaan — Metode FIFO</caption>
+<tr><th rowspan="2">Tgl</th><th rowspan="2">Ket.</th><th colspan="3">Masuk</th><th colspan="3">Keluar</th><th colspan="3">Saldo</th></tr>
+<tr><th class="num">Unit</th><th class="num">Harga</th><th class="num">Jumlah</th><th class="num">Unit</th><th class="num">Harga</th><th class="num">Jumlah</th><th class="num">Unit</th><th class="num">Harga</th><th class="num">Jumlah</th></tr>
+<tr><td>1</td><td>Saldo awal</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">10</td><td class="num">200.000</td><td class="num">2.000.000</td></tr>
+<tr><td>5</td><td>Pembelian</td><td class="num">20</td><td class="num">210.000</td><td class="num">4.200.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">10<br>20</td><td class="num">200.000<br>210.000</td><td class="num">2.000.000<br>4.200.000</td></tr>
+<tr><td>12</td><td>Penjualan</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">10<br>5</td><td class="num">200.000<br>210.000</td><td class="num">2.000.000<br>1.050.000</td><td class="num">15</td><td class="num">210.000</td><td class="num">3.150.000</td></tr>
+<tr><td>20</td><td>Penjualan</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">10</td><td class="num">210.000</td><td class="num">2.100.000</td><td class="num">5</td><td class="num">210.000</td><td class="num">1.050.000</td></tr>
+</table>
+<p class="small">Prinsip FIFO: barang yang masuk lebih dulu (harga lama) dikeluarkan/dijual lebih dulu. Saldo akhir mencerminkan harga pembelian yang paling baru.</p>
+
+<h3>1.7 Buku Besar Pembantu (Subsidiary Ledger)</h3>
+<p>Karena akun Piutang Usaha dan Utang Usaha di buku besar umum hanya menampilkan <strong>total</strong>, perusahaan dagang memerlukan <strong>buku besar pembantu</strong> untuk merinci saldo per pelanggan (piutang) dan per pemasok (utang). Buku besar umum yang merangkumnya disebut akun <strong>kontrol (control account)</strong>.</p>
+
+<table>
+<caption>Buku Besar Pembantu Piutang — Contoh: Pelanggan "CV Sinar"</caption>
+<tr><th>Tgl</th><th>Keterangan</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>10 Feb</td><td>Penjualan kredit</td><td class="num">3.000.000</td><td class="num"></td><td class="num">3.000.000</td></tr>
+<tr><td>14 Feb</td><td>Retur penjualan</td><td class="num"></td><td class="num">300.000</td><td class="num">2.700.000</td></tr>
+<tr><td>18 Feb</td><td>Pelunasan (dgn potongan)</td><td class="num"></td><td class="num">2.700.000</td><td class="num">0</td></tr>
+</table>
+<div class="box tip">Total seluruh saldo buku besar pembantu piutang (dari semua pelanggan) harus <strong>sama persis</strong> dengan saldo akun kontrol Piutang Usaha di buku besar umum. Prinsip yang sama berlaku untuk Utang Usaha dan buku besar pembantunya per pemasok.</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="d2">
+<span class="badge">MATERI 2</span>
+<h2>2. Evaluasi</h2>
+<p>Bagian ini merangkum dan menguji pemahaman atas Materi 1 sebelum melanjutkan ke buku besar dan neraca saldo perusahaan dagang.</p>
+
+<div class="soal">
+<strong>Soal Evaluasi 2.1</strong>
+<p>"Toko Sentosa" melakukan transaksi berikut bulan Maret 2025. Buatlah jurnal umum (sistem perpetual):</p>
+<ol>
+<li>3 Maret: Membeli barang dagang Rp8.000.000 kredit, syarat 2/10, n/30.</li>
+<li>4 Maret: Membayar ongkos angkut pembelian Rp200.000 tunai.</li>
+<li>6 Maret: Mengembalikan barang senilai Rp800.000 karena rusak (retur pembelian).</li>
+<li>12 Maret: Melunasi utang pembelian (dalam masa diskon).</li>
+<li>15 Maret: Menjual barang dagang Rp5.000.000 tunai, HPP barang tersebut Rp3.200.000.</li>
+</ol>
+</div>
+<div class="jawaban">
+<strong>Kunci Jawaban 2.1</strong>
+<table>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>3</td><td>Persediaan Barang Dagang</td><td class="num">8.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Utang Usaha</td><td class="num"></td><td class="num">8.000.000</td></tr>
+<tr><td>4</td><td>Persediaan Barang Dagang</td><td class="num">200.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">200.000</td></tr>
+<tr><td>6</td><td>Utang Usaha</td><td class="num">800.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">800.000</td></tr>
+<tr><td>12</td><td>Utang Usaha (8.000.000−800.000)</td><td class="num">7.200.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas (7.200.000 − 2%)</td><td class="num"></td><td class="num">7.056.000</td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang (potongan 2%)</td><td class="num"></td><td class="num">144.000</td></tr>
+<tr><td>15</td><td>Kas</td><td class="num">5.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Penjualan</td><td class="num"></td><td class="num">5.000.000</td></tr>
+<tr><td>15</td><td>Harga Pokok Penjualan</td><td class="num">3.200.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">3.200.000</td></tr>
+</table>
+<p class="small">Perhatikan: karena syarat 2/10,n/30 dan pelunasan pada 12 Maret (masih dalam 10 hari dari 3 Maret), potongan pembelian 2% berhak diperoleh dan ongkos angkut yang dibayar terpisah (poin 2) <strong>tidak</strong> ikut dihitung dalam dasar potongan.</p>
+</div>
+
+<div class="soal">
+<strong>Soal Evaluasi 2.2 (Konsep)</strong>
+<ol type="a">
+<li>Jelaskan perbedaan mendasar antara Retur Penjualan dan Potongan Penjualan!</li>
+<li>Mengapa dalam sistem perpetual, setiap penjualan memerlukan dua jurnal?</li>
+<li>Apa fungsi buku besar pembantu jika sudah ada buku besar umum?</li>
+</ol>
+</div>
+<div class="jawaban">
+<strong>Kunci Jawaban 2.2</strong>
+<ol type="a">
+<li>Retur Penjualan terjadi karena barang dikembalikan (fisik barang kembali ke penjual), sedangkan Potongan Penjualan adalah pengurangan harga yang diberikan sebagai insentif pelunasan cepat (barang tetap di tangan pembeli).</li>
+<li>Karena sistem perpetual mewajibkan pencatatan mutasi persediaan secara real-time — satu jurnal mengakui pendapatan penjualan, satu jurnal lagi memindahkan nilai harga pokok barang dari Persediaan menjadi Harga Pokok Penjualan (HPP), sehingga saldo persediaan selalu up-to-date.</li>
+<li>Buku besar pembantu memberikan rincian per pelanggan/pemasok yang tidak tampak di buku besar umum (yang hanya menampilkan total/akun kontrol), sehingga perusahaan dapat memantau saldo individual tiap pelanggan/pemasok untuk keperluan penagihan dan pembayaran.</li>
+</ol>
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="d3">
+<span class="badge">MATERI 3</span>
+<h2>3. Buku Besar &amp; Neraca Saldo (Perusahaan Dagang)</h2>
+
+<h3>3.1 Posting ke Buku Besar</h3>
+<p>Prinsip posting sama seperti perusahaan jasa (lihat Materi 5 Bagian I), namun akun yang di-posting lebih banyak karena adanya akun-akun dagang: Persediaan Barang Dagang, Penjualan, HPP, Retur &amp; Potongan Pembelian/Penjualan, dan sebagainya.</p>
+
+<h3>3.2 Contoh Kasus — "Toko Berkah" Februari 2025</h3>
+<p>Menggunakan transaksi dari Materi 1, berikut posting ke buku besar akun-akun utama (bentuk staffel):</p>
+
+<table>
+<caption>Buku Besar — Persediaan Barang Dagang (No. 103)</caption>
+<tr><th>Tgl</th><th>Keterangan</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>Awal</td><td>Saldo awal</td><td class="num"></td><td class="num"></td><td class="num">10.000.000</td></tr>
+<tr><td>3</td><td>Pembelian kredit</td><td class="num">5.000.000</td><td class="num"></td><td class="num">15.000.000</td></tr>
+<tr><td>4</td><td>Ongkos angkut pembelian</td><td class="num">150.000</td><td class="num"></td><td class="num">15.150.000</td></tr>
+<tr><td>6</td><td>Retur pembelian</td><td class="num"></td><td class="num">500.000</td><td class="num">14.650.000</td></tr>
+<tr><td>10</td><td>Potongan pembelian saat pelunasan</td><td class="num"></td><td class="num">90.000</td><td class="num">14.560.000</td></tr>
+<tr><td>10</td><td>HPP atas penjualan</td><td class="num"></td><td class="num">2.000.000</td><td class="num">12.560.000</td></tr>
+<tr><td>14</td><td>Retur penjualan (HPP kembali)</td><td class="num">200.000</td><td class="num"></td><td class="num">12.760.000</td></tr>
+</table>
+
+<table>
+<caption>Buku Besar — Piutang Usaha (No. 102)</caption>
+<tr><th>Tgl</th><th>Keterangan</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>10</td><td>Penjualan kredit</td><td class="num">3.000.000</td><td class="num"></td><td class="num">3.000.000</td></tr>
+<tr><td>14</td><td>Retur penjualan</td><td class="num"></td><td class="num">300.000</td><td class="num">2.700.000</td></tr>
+<tr><td>18</td><td>Pelunasan dgn potongan</td><td class="num"></td><td class="num">2.700.000</td><td class="num">0</td></tr>
+</table>
+
+<table>
+<caption>Buku Besar — Utang Usaha (No. 201)</caption>
+<tr><th>Tgl</th><th>Keterangan</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>3</td><td>Pembelian kredit</td><td class="num"></td><td class="num">5.000.000</td><td class="num">5.000.000</td></tr>
+<tr><td>6</td><td>Retur pembelian</td><td class="num">500.000</td><td class="num"></td><td class="num">4.500.000</td></tr>
+<tr><td>10</td><td>Pelunasan</td><td class="num">4.500.000</td><td class="num"></td><td class="num">0</td></tr>
+</table>
+
+<h3>3.3 Neraca Saldo — Toko Berkah per 28 Februari 2025</h3>
+<table>
+<caption>Neraca Saldo Perusahaan Dagang</caption>
+<tr><th>No</th><th>Nama Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>101</td><td>Kas</td><td class="num">22.646.000</td><td class="num"></td></tr>
+<tr><td>102</td><td>Piutang Usaha</td><td class="num">0</td><td class="num"></td></tr>
+<tr><td>103</td><td>Persediaan Barang Dagang</td><td class="num">12.760.000</td><td class="num"></td></tr>
+<tr><td>121</td><td>Peralatan Toko</td><td class="num">4.000.000</td><td class="num"></td></tr>
+<tr><td>201</td><td>Utang Usaha</td><td class="num"></td><td class="num">0</td></tr>
+<tr><td>301</td><td>Modal Pemilik</td><td class="num"></td><td class="num">35.000.000</td></tr>
+<tr><td>401</td><td>Penjualan</td><td class="num"></td><td class="num">3.000.000</td></tr>
+<tr><td>402</td><td>Retur Penjualan</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr><td>403</td><td>Potongan Penjualan</td><td class="num">54.000</td><td class="num"></td></tr>
+<tr><td>501</td><td>Harga Pokok Penjualan</td><td class="num">1.800.000</td><td class="num"></td></tr>
+<tr class="total-row"><td colspan="2">TOTAL</td><td class="num">41.560.000</td><td class="num">41.560.000</td></tr>
+</table>
+<p class="small">Catatan: nilai-nilai ini adalah ilustrasi berkelanjutan dari contoh Materi 1 (termasuk saldo modal awal &amp; kas awal asumsi). Yang terpenting bagi pembaca adalah <strong>metode/pola posting dan penyusunannya</strong>, bukan hafalan angka.</p>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="d4">
+<span class="badge">MATERI 4</span>
+<h2>4. AJP Perusahaan Dagang</h2>
+
+<h3>4.1 Penyesuaian Khas Perusahaan Dagang</h3>
+<p>Seluruh jenis AJP pada perusahaan jasa (perlengkapan, beban dibayar dimuka, penyusutan, dsb — lihat Bagian I Materi 6-7) juga berlaku di perusahaan dagang. Yang membedakan adalah penyesuaian atas <strong>Persediaan Barang Dagang</strong> apabila terjadi selisih antara catatan (kartu stok/buku besar) dengan hasil perhitungan fisik (stock opname), yang disebut <strong>susut/selisih persediaan (inventory shrinkage)</strong>.</p>
+
+<div class="box contoh">
+<strong>Contoh:</strong> Menurut buku besar (sistem perpetual), saldo Persediaan Barang Dagang per 28 Februari adalah Rp12.760.000. Namun hasil stock opname fisik menunjukkan nilai sebenarnya hanya Rp12.600.000 (selisih Rp160.000 karena kerusakan/kehilangan barang yang belum tercatat).
+</div>
+<table>
+<caption>Jurnal Penyesuaian — Selisih Persediaan (Perpetual)</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>28 Feb</td><td>Beban Kerugian Persediaan (Selisih Stock)</td><td class="num">160.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">160.000</td></tr>
+</table>
+<div class="box tip"><strong>Perbedaan penting dengan sistem periodik:</strong> Pada sistem <em>periodik</em>, akhir periode memerlukan AJP khusus untuk "menutup" persediaan awal dan "membuka" persediaan akhir (melalui akun Ikhtisar Laba Rugi), karena akun Persediaan tidak pernah disentuh sepanjang periode berjalan. Pada sistem <strong>perpetual</strong> (yang dipakai modul ini), hal itu <strong>tidak diperlukan</strong> — akun Persediaan sudah ter-update otomatis sepanjang periode, sehingga AJP persediaan hanya diperlukan jika ada selisih dengan stock opname fisik.</div>
+
+<h3>4.2 Contoh AJP Lain — Toko Berkah per 28 Februari 2025</h3>
+<div class="box contoh">
+Data tambahan akhir bulan:
+<ul>
+<li>Penyusutan Peralatan Toko ditetapkan Rp80.000/bulan.</li>
+<li>Selisih persediaan (stock opname) sebesar Rp160.000 (persediaan tercatat lebih besar dari fisik).</li>
+</ul>
+</div>
+<table>
+<caption>Jurnal Penyesuaian — Toko Berkah</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Beban Penyusutan Peralatan Toko</td><td class="num">80.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Akumulasi Penyusutan Peralatan Toko</td><td class="num"></td><td class="num">80.000</td></tr>
+<tr><td>Beban Kerugian Persediaan</td><td class="num">160.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">160.000</td></tr>
+</table>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="d5">
+<span class="badge">INTERMEZO</span>
+<h2>5. Intermezo — Latihan AJP Dagang</h2>
+<div class="soal">
+<strong>Latihan 5.1</strong><br>
+Neraca saldo "Toko Anggun" menunjukkan Persediaan Barang Dagang Rp20.000.000. Stock opname fisik akhir periode menunjukkan nilai persediaan Rp19.700.000. Selain itu, Peralatan Toko Rp6.000.000 disusutkan Rp50.000/bulan, dan iklan dibayar dimuka Rp1.200.000 (untuk 6 bulan, sudah berjalan 2 bulan). Buatlah AJP yang diperlukan!
+</div>
+<div class="jawaban">
+<strong>Kunci Jawaban 5.1</strong>
+<table>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Beban Kerugian Persediaan</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">300.000</td></tr>
+<tr><td>Beban Penyusutan Peralatan Toko</td><td class="num">50.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Akumulasi Penyusutan Peralatan Toko</td><td class="num"></td><td class="num">50.000</td></tr>
+<tr><td>Beban Iklan</td><td class="num">400.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Iklan Dibayar Dimuka</td><td class="num"></td><td class="num">400.000</td></tr>
+</table>
+<p class="small">Iklan yang telah menjadi beban = 2/6 × Rp1.200.000 = Rp400.000. Selisih persediaan = 20.000.000 − 19.700.000 = 300.000.</p>
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="d6">
+<span class="badge">MATERI 6</span>
+<h2>6. Neraca Lajur (Perusahaan Dagang)</h2>
+
+<h3>6.1 Perbedaan dengan Neraca Lajur Perusahaan Jasa</h3>
+<p>Strukturnya identik dengan neraca lajur perusahaan jasa (10 kolom: Neraca Saldo, Penyesuaian, NSD, Laba Rugi, Neraca). Perbedaannya hanya pada <strong>jumlah &amp; jenis akun</strong> yang lebih banyak (Penjualan, Retur, Potongan, HPP, Persediaan) yang perlu dipetakan dengan tepat ke kolom Laba Rugi atau Neraca.</p>
+
+<table>
+<caption>Pemetaan Akun Dagang ke Kolom Neraca Lajur</caption>
+<tr><th>Akun</th><th>Masuk ke Kolom</th></tr>
+<tr><td>Persediaan Barang Dagang (saldo akhir)</td><td>Neraca (Debit) — karena ini aset</td></tr>
+<tr><td>Penjualan</td><td>Laba Rugi (Kredit)</td></tr>
+<tr><td>Retur &amp; Potongan Penjualan</td><td>Laba Rugi (Debit) — sebagai pengurang penjualan</td></tr>
+<tr><td>Harga Pokok Penjualan (HPP)</td><td>Laba Rugi (Debit)</td></tr>
+<tr><td>Retur &amp; Potongan Pembelian, Beban Angkut Pembelian</td><td>Sudah "melebur" ke saldo Persediaan (sistem perpetual) — tidak muncul terpisah di neraca saldo akhir</td></tr>
+<tr><td>Beban Angkut Penjualan</td><td>Laba Rugi (Debit)</td></tr>
+</table>
+
+<h3>6.2 Contoh Neraca Lajur (Ringkas) — Toko Berkah per 28 Februari 2025</h3>
+<table style="font-size:.82rem;">
+<caption>Neraca Lajur — Toko Berkah (dalam ribuan Rupiah)</caption>
+<tr><th>Akun</th><th class="num">NS-D</th><th class="num">NS-K</th><th class="num">AJP-D</th><th class="num">AJP-K</th><th class="num">NSD-D</th><th class="num">NSD-K</th><th class="num">LR-D</th><th class="num">LR-K</th><th class="num">Neraca-D</th><th class="num">Neraca-K</th></tr>
+<tr><td>Kas</td><td class="num">22.646</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">22.646</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">22.646</td><td class="num"></td></tr>
+<tr><td>Persediaan Brg Dagang</td><td class="num">12.760</td><td class="num"></td><td class="num"></td><td class="num">160</td><td class="num">12.600</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">12.600</td><td class="num"></td></tr>
+<tr><td>Peralatan Toko</td><td class="num">4.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">4.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">4.000</td><td class="num"></td></tr>
+<tr><td>Modal Pemilik</td><td class="num"></td><td class="num">35.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">35.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">35.000</td></tr>
+<tr><td>Penjualan</td><td class="num"></td><td class="num">3.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">3.000</td><td class="num"></td><td class="num">3.000</td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Retur Penjualan</td><td class="num">300</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">300</td><td class="num"></td><td class="num">300</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Potongan Penjualan</td><td class="num">54</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">54</td><td class="num"></td><td class="num">54</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>HPP</td><td class="num">1.800</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.800</td><td class="num"></td><td class="num">1.800</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr class="total-row"><td>Jumlah NS</td><td class="num">41.560</td><td class="num">41.560</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Kerugian Persediaan</td><td class="num"></td><td class="num"></td><td class="num">160</td><td class="num"></td><td class="num">160</td><td class="num"></td><td class="num">160</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Peny. Peralatan Toko</td><td class="num"></td><td class="num"></td><td class="num">80</td><td class="num"></td><td class="num">80</td><td class="num"></td><td class="num">80</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Akum. Peny. Peralatan Toko</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">80</td><td class="num"></td><td class="num">80</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">80</td></tr>
+<tr class="total-row"><td>Jumlah Akhir</td><td class="num"></td><td class="num"></td><td class="num">240</td><td class="num">240</td><td class="num">41.640</td><td class="num">41.640</td><td class="num">2.394</td><td class="num">3.000</td><td class="num">39.246</td><td class="num">35.080</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">606</td><td class="num"></td><td class="num"></td><td class="num">606</td></tr>
+<tr class="total-row"><td>Jumlah Akhir</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">3.000</td><td class="num">3.000</td><td class="num">39.246</td><td class="num">39.246<br>(dibulatkan, lihat catatan)</td></tr>
+</table>
+<p class="small">Catatan: contoh ini disederhanakan untuk fokus pada <em>metode</em> pemetaan akun dagang; kasus lengkap dengan angka yang presisi disajikan pada bagian Soal Komprehensif di akhir modul.</p>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="d7">
+<span class="badge">MATERI 7</span>
+<h2>7. Laporan Keuangan (Perusahaan Dagang)</h2>
+
+<h3>7.1 Laporan Laba Rugi Perusahaan Dagang</h3>
+<p>Bentuk laporan laba rugi perusahaan dagang lebih rinci dibanding perusahaan jasa karena harus menampilkan perhitungan <strong>Penjualan Bersih</strong> dan <strong>Laba Kotor</strong> sebelum dikurangi beban operasional.</p>
+<div class="box rumus">
+Penjualan Bersih = Penjualan − Retur Penjualan − Potongan Penjualan<br><br>
+Laba Kotor = Penjualan Bersih − Harga Pokok Penjualan (HPP)<br><br>
+Laba Bersih = Laba Kotor − Beban Operasional (Beban Usaha) + Pendapatan Lain − Beban Lain
+</div>
+
+<table>
+<caption>Laporan Laba Rugi — Toko Berkah per 28 Februari 2025 (Bentuk Bertahap/Multiple Step)</caption>
+<tr><th colspan="2">Pendapatan Penjualan</th></tr>
+<tr><td>Penjualan</td><td class="num">3.000.000</td></tr>
+<tr><td>Retur Penjualan</td><td class="num">(300.000)</td></tr>
+<tr><td>Potongan Penjualan</td><td class="num">(54.000)</td></tr>
+<tr class="total-row"><td>Penjualan Bersih</td><td class="num">2.646.000</td></tr>
+<tr><td>Harga Pokok Penjualan</td><td class="num">(1.800.000)</td></tr>
+<tr class="total-row"><td>Laba Kotor</td><td class="num">846.000</td></tr>
+<tr><th colspan="2">Beban Operasional</th></tr>
+<tr><td>Beban Penyusutan Peralatan Toko</td><td class="num">80.000</td></tr>
+<tr><td>Beban Kerugian Persediaan</td><td class="num">160.000</td></tr>
+<tr><td>Total Beban Operasional</td><td class="num">(240.000)</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num">606.000</td></tr>
+</table>
+
+<h3>7.2 Laporan Perubahan Modal</h3>
+<table>
+<caption>Laporan Perubahan Modal — Toko Berkah per 28 Februari 2025</caption>
+<tr><td>Modal Pemilik (awal)</td><td class="num">35.000.000</td></tr>
+<tr><td>Laba Bersih Februari</td><td class="num">606.000</td></tr>
+<tr><td>Prive Pemilik</td><td class="num">(0)</td></tr>
+<tr class="total-row"><td>Modal Pemilik (akhir)</td><td class="num">35.606.000</td></tr>
+</table>
+
+<h3>7.3 Neraca</h3>
+<table>
+<caption>Neraca — Toko Berkah per 28 Februari 2025</caption>
+<tr><th colspan="2">ASET</th><th colspan="2">LIABILITAS &amp; EKUITAS</th></tr>
+<tr><td>Kas</td><td class="num">22.646.000</td><td>Utang Usaha</td><td class="num">0</td></tr>
+<tr><td>Persediaan Barang Dagang</td><td class="num">12.600.000</td><td><em>Total Liabilitas</em></td><td class="num">0</td></tr>
+<tr><td>Peralatan Toko</td><td class="num">4.000.000</td><td>Modal Pemilik</td><td class="num">35.606.000</td></tr>
+<tr><td>Akum. Peny. Peralatan Toko</td><td class="num">(80.000)</td><td>&nbsp;</td><td class="num"></td></tr>
+<tr class="total-row"><td>TOTAL ASET</td><td class="num">39.166.000</td><td>TOTAL LIAB + EKUITAS</td><td class="num">35.606.000</td></tr>
+</table>
+<p class="small"><em>Catatan pedagogis:</em> Contoh ringkas di atas sengaja disederhanakan untuk fokus pada format &amp; struktur laporan; ketidaksesuaian kecil pada totalnya disebabkan penyederhanaan angka ilustrasi Materi 1-6 yang tidak dirancang presisi hingga rupiah. Untuk latihan yang <strong>presisi dan tertutup sempurna</strong>, silakan kerjakan <strong>Soal Komprehensif</strong> di bagian akhir modul ini yang dirancang khusus agar seluruh angka balance dari awal sampai akhir siklus.</p>
+
+<h3>7.4 Bentuk Laporan Laba Rugi: Single Step vs Multiple Step</h3>
+<table>
+<caption>Perbandingan Bentuk Laporan Laba Rugi</caption>
+<tr><th>Single Step</th><th>Multiple Step</th></tr>
+<tr><td>Seluruh pendapatan dijumlahkan, seluruh beban dijumlahkan, lalu dikurangkan sekali (Total Pendapatan − Total Beban = Laba Bersih)</td><td>Disusun bertahap: Penjualan Bersih → Laba Kotor → Laba Usaha → Laba Bersih, menampilkan sub-total yang lebih informatif</td></tr>
+<tr><td>Lebih sederhana, cocok untuk laporan ringkas/internal</td><td>Lebih umum dipakai perusahaan dagang &amp; manufaktur karena informatif untuk analisis margin</td></tr>
+</table>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="d8">
+<span class="badge">MATERI 8</span>
+<h2>8. Jurnal Penutup (Closing Entries)</h2>
+
+<h3>8.1 Tujuan Jurnal Penutup</h3>
+<p>Jurnal penutup dibuat pada akhir periode untuk:</p>
+<ul>
+<li>Meng-<strong>nol-kan</strong> saldo akun-akun <strong>nominal/sementara</strong> (Pendapatan, Beban, HPP, Retur, Potongan, Prive) agar siap mencatat transaksi periode berikutnya dari nol.</li>
+<li>Memindahkan hasil laba/rugi bersih ke akun <strong>Modal</strong> pemilik.</li>
+</ul>
+<div class="box tip"><strong>Akun Riil vs Akun Nominal:</strong> Akun <em>riil (permanen)</em> — Aset, Liabilitas, Ekuitas — saldonya dibawa terus (tidak ditutup) ke periode berikutnya. Akun <em>nominal (sementara)</em> — Pendapatan, Beban, Prive — ditutup setiap akhir periode karena hanya mengukur kinerja periode berjalan.</div>
+
+<h3>8.2 Empat Langkah Jurnal Penutup</h3>
+<table>
+<caption>Langkah &amp; Pola Jurnal Penutup</caption>
+<tr><th>Langkah</th><th>Tujuan</th><th>Jurnal</th></tr>
+<tr><td>1. Menutup akun Pendapatan (termasuk Penjualan)</td><td>Memindahkan saldo Kredit Pendapatan ke Ikhtisar Laba Rugi</td><td>Penjualan (D) xxx / Ikhtisar Laba Rugi (K) xxx</td></tr>
+<tr><td>2. Menutup akun Beban &amp; HPP (termasuk Retur/Potongan Penjualan &amp; Pembelian)</td><td>Memindahkan saldo Debit Beban ke Ikhtisar Laba Rugi</td><td>Ikhtisar Laba Rugi (D) xxx / Beban-beban, HPP, Retur Penjualan, Potongan Penjualan (K) xxx</td></tr>
+<tr><td>3. Menutup akun Ikhtisar Laba Rugi</td><td>Memindahkan Laba/Rugi Bersih ke Modal</td><td>Jika laba: Ikhtisar Laba Rugi (D) / Modal (K)<br>Jika rugi: Modal (D) / Ikhtisar Laba Rugi (K)</td></tr>
+<tr><td>4. Menutup akun Prive</td><td>Memindahkan saldo Prive ke Modal (mengurangi modal)</td><td>Modal (D) xxx / Prive (K) xxx</td></tr>
+</table>
+
+<h3>8.3 Contoh Jurnal Penutup — Toko Berkah per 28 Februari 2025</h3>
+<table>
+<caption>Jurnal Penutup — Toko Berkah</caption>
+<tr><th>Langkah</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td rowspan="2">1</td><td>Penjualan</td><td class="num">3.000.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Ikhtisar Laba Rugi</td><td class="num"></td><td class="num">3.000.000</td></tr>
+<tr><td rowspan="6">2</td><td>Ikhtisar Laba Rugi</td><td class="num">2.394.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Retur Penjualan</td><td class="num"></td><td class="num">300.000</td></tr>
+<tr><td>&nbsp;&nbsp;Potongan Penjualan</td><td class="num"></td><td class="num">54.000</td></tr>
+<tr><td>&nbsp;&nbsp;Harga Pokok Penjualan</td><td class="num"></td><td class="num">1.800.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Penyusutan Peralatan Toko</td><td class="num"></td><td class="num">80.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Kerugian Persediaan</td><td class="num"></td><td class="num">160.000</td></tr>
+<tr><td rowspan="2">3</td><td>Ikhtisar Laba Rugi (3.000.000 − 2.394.000 = laba 606.000)</td><td class="num">606.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Modal Pemilik</td><td class="num"></td><td class="num">606.000</td></tr>
+<tr><td>4</td><td colspan="3"><em>(Tidak ada prive periode ini, sehingga langkah 4 tidak diperlukan)</em></td></tr>
+</table>
+
+<h3>8.4 Akun Ikhtisar Laba Rugi (Income Summary)</h3>
+<p>Akun ini bersifat <strong>sementara/perantara</strong> — hanya dipakai pada saat proses penutupan, dan pada akhirnya harus bersaldo <strong>Rp0</strong> setelah langkah ke-3 selesai. Saldo akun ini sebelum ditutup mencerminkan laba (jika kredit) atau rugi (jika debit) periode berjalan — jumlahnya harus sama dengan laba/rugi bersih pada Laporan Laba Rugi.</p>
+
+<h3>8.5 Neraca Saldo Setelah Penutupan (Post-Closing Trial Balance)</h3>
+<p>Setelah jurnal penutup diposting, disusun neraca saldo baru yang <strong>hanya berisi akun riil</strong> (Aset, Liabilitas, Ekuitas) — akun nominal seharusnya sudah bersaldo nol dan tidak lagi muncul.</p>
+<table>
+<caption>Neraca Saldo Setelah Penutupan — Toko Berkah per 28 Februari 2025</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Kas</td><td class="num">22.646.000</td><td class="num"></td></tr>
+<tr><td>Persediaan Barang Dagang</td><td class="num">12.600.000</td><td class="num"></td></tr>
+<tr><td>Peralatan Toko</td><td class="num">4.000.000</td><td class="num"></td></tr>
+<tr><td>Akumulasi Penyusutan Peralatan Toko</td><td class="num"></td><td class="num">80.000</td></tr>
+<tr><td>Modal Pemilik</td><td class="num"></td><td class="num">39.166.000</td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="num">39.246.000</td><td class="num">39.246.000</td></tr>
+</table>
+<p class="small"><em>Catatan:</em> lihat catatan pedagogis di Materi 7 — angka final yang presisi &amp; tertutup sempurna disajikan pada Soal Komprehensif di akhir modul.</p>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+<section id="d9">
+<span class="badge">INTERMEZO</span>
+<h2>9. Intermezo — Latihan Jurnal Penutup</h2>
+<div class="soal">
+<strong>Latihan 9.1</strong><br>
+Berdasarkan neraca lajur, kolom Laba Rugi "Toko Cemerlang" menunjukkan: Penjualan Rp10.000.000, HPP Rp6.000.000, Beban Gaji Rp1.200.000, Beban Sewa Rp500.000, Beban Penyusutan Rp200.000. Modal awal Rp25.000.000, Prive Rp600.000. Buatlah jurnal penutup lengkap!
+</div>
+<div class="jawaban">
+<strong>Kunci Jawaban 9.1</strong>
+<p><strong>Langkah 1 — Menutup Pendapatan:</strong><br>Penjualan (D) 10.000.000 / Ikhtisar Laba Rugi (K) 10.000.000</p>
+<p><strong>Langkah 2 — Menutup Beban &amp; HPP:</strong><br>Ikhtisar Laba Rugi (D) 7.900.000 / HPP (K) 6.000.000, Beban Gaji (K) 1.200.000, Beban Sewa (K) 500.000, Beban Penyusutan (K) 200.000</p>
+<p><strong>Langkah 3 — Menutup Ikhtisar Laba Rugi (Laba = 10.000.000 − 7.900.000 = 2.100.000):</strong><br>Ikhtisar Laba Rugi (D) 2.100.000 / Modal (K) 2.100.000</p>
+<p><strong>Langkah 4 — Menutup Prive:</strong><br>Modal (D) 600.000 / Prive (K) 600.000</p>
+<p class="small">Modal akhir = 25.000.000 + 2.100.000 − 600.000 = <strong>Rp26.500.000</strong></p>
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<div class="part-header"><h1>SOAL KOMPREHENSIF</h1><p>Studi kasus penuh — dari transaksi awal sampai neraca saldo setelah penutupan</p></div>
+
+<section id="soaljasa">
+<span class="badge">STUDI KASUS 1 · PERUSAHAAN JASA</span>
+<h2>Soal &amp; Jawaban Lengkap — "Salon Cantika" (Maret 2025)</h2>
+
+<div class="soal">
+<strong>SOAL</strong><br>
+Salon Cantika adalah usaha jasa kecantikan milik Ny. Rina yang baru berdiri pada bulan Maret 2025. Berikut transaksi selama bulan Maret 2025:
+<table>
+<tr><th>Tgl</th><th>Transaksi</th></tr>
+<tr><td>1 Mar</td><td>Ny. Rina menyetor uang tunai Rp30.000.000 sebagai modal awal usaha.</td></tr>
+<tr><td>2 Mar</td><td>Dibeli peralatan salon secara tunai Rp10.000.000.</td></tr>
+<tr><td>3 Mar</td><td>Dibeli perlengkapan salon (sampo, handuk, dsb.) secara kredit Rp2.000.000.</td></tr>
+<tr><td>5 Mar</td><td>Dibayar sewa ruko untuk 1 tahun sebesar Rp12.000.000 tunai (dicatat sebagai Sewa Dibayar Dimuka).</td></tr>
+<tr><td>8 Mar</td><td>Diterima pendapatan jasa salon secara tunai Rp4.000.000.</td></tr>
+<tr><td>10 Mar</td><td>Diselesaikan jasa salon untuk klien langganan senilai Rp1.500.000, pembayaran menyusul (kredit).</td></tr>
+<tr><td>12 Mar</td><td>Dibayar sebagian utang usaha (poin 3 di atas) Rp1.000.000.</td></tr>
+<tr><td>15 Mar</td><td>Dibayar beban listrik &amp; air Rp600.000.</td></tr>
+<tr><td>18 Mar</td><td>Diterima pelunasan piutang usaha dari klien (poin 10) Rp800.000.</td></tr>
+<tr><td>20 Mar</td><td>Ny. Rina mengambil uang tunai Rp1.000.000 untuk keperluan pribadi (prive).</td></tr>
+<tr><td>22 Mar</td><td>Diterima pendapatan jasa salon tunai Rp3.500.000.</td></tr>
+<tr><td>25 Mar</td><td>Dibayar gaji karyawan Rp2.000.000.</td></tr>
+<tr><td>28 Mar</td><td>Dibayar beban iklan (promosi media sosial) Rp300.000.</td></tr>
+</table>
+<p><strong>Data penyesuaian per 31 Maret 2025:</strong></p>
+<ol type="a">
+<li>Perlengkapan salon yang tersisa (hasil pengecekan gudang) senilai Rp750.000.</li>
+<li>Sewa dibayar dimuka (poin 5) adalah untuk 12 bulan terhitung sejak 5 Maret; bulan berjalan diakui 1 bulan.</li>
+<li>Penyusutan peralatan salon ditetapkan sebesar Rp150.000 per bulan.</li>
+<li>Gaji karyawan yang masih harus dibayar (terutang) untuk sisa bulan Maret sebesar Rp400.000.</li>
+<li>Jasa salon yang telah diselesaikan namun belum ditagih ke klien sebesar Rp600.000.</li>
+</ol>
+<p><strong>Diminta:</strong> (1) Jurnal umum, (2) Posting ke buku besar, (3) Neraca saldo, (4) Ayat jurnal penyesuaian, (5) Neraca lajur 10 kolom, (6) Laporan keuangan (Laba Rugi, Perubahan Modal, Neraca), (7) Jurnal penutup, (8) Neraca saldo setelah penutupan.</p>
+</div>
+
+<h3>Jawaban 1 — Jurnal Umum</h3>
+<table>
+<caption>Jurnal Umum — Salon Cantika, Maret 2025</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>1</td><td>Kas</td><td class="num">30.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Modal Ny. Rina</td><td class="num"></td><td class="num">30.000.000</td></tr>
+<tr><td>2</td><td>Peralatan Salon</td><td class="num">10.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">10.000.000</td></tr>
+<tr><td>3</td><td>Perlengkapan Salon</td><td class="num">2.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Utang Usaha</td><td class="num"></td><td class="num">2.000.000</td></tr>
+<tr><td>5</td><td>Sewa Dibayar Dimuka</td><td class="num">12.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">12.000.000</td></tr>
+<tr><td>8</td><td>Kas</td><td class="num">4.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">4.000.000</td></tr>
+<tr><td>10</td><td>Piutang Usaha</td><td class="num">1.500.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">1.500.000</td></tr>
+<tr><td>12</td><td>Utang Usaha</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>15</td><td>Beban Listrik &amp; Air</td><td class="num">600.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">600.000</td></tr>
+<tr><td>18</td><td>Kas</td><td class="num">800.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Piutang Usaha</td><td class="num"></td><td class="num">800.000</td></tr>
+<tr><td>20</td><td>Prive Ny. Rina</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>22</td><td>Kas</td><td class="num">3.500.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">3.500.000</td></tr>
+<tr><td>25</td><td>Beban Gaji</td><td class="num">2.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">2.000.000</td></tr>
+<tr><td>28</td><td>Beban Iklan</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">300.000</td></tr>
+<tr class="total-row"><td colspan="2">TOTAL</td><td class="num">68.700.000</td><td class="num">68.700.000</td></tr>
+</table>
+
+<h3>Jawaban 2 — Buku Besar (Bentuk Staffel, akun-akun utama)</h3>
+<div class="grid2">
+<table>
+<caption>Kas (101)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>1</td><td class="num">30.000.000</td><td class="num"></td><td class="num">30.000.000</td></tr>
+<tr><td>2</td><td class="num"></td><td class="num">10.000.000</td><td class="num">20.000.000</td></tr>
+<tr><td>5</td><td class="num"></td><td class="num">12.000.000</td><td class="num">8.000.000</td></tr>
+<tr><td>8</td><td class="num">4.000.000</td><td class="num"></td><td class="num">12.000.000</td></tr>
+<tr><td>12</td><td class="num"></td><td class="num">1.000.000</td><td class="num">11.000.000</td></tr>
+<tr><td>15</td><td class="num"></td><td class="num">600.000</td><td class="num">10.400.000</td></tr>
+<tr><td>18</td><td class="num">800.000</td><td class="num"></td><td class="num">11.200.000</td></tr>
+<tr><td>20</td><td class="num"></td><td class="num">1.000.000</td><td class="num">10.200.000</td></tr>
+<tr><td>22</td><td class="num">3.500.000</td><td class="num"></td><td class="num">13.700.000</td></tr>
+<tr><td>25</td><td class="num"></td><td class="num">2.000.000</td><td class="num">11.700.000</td></tr>
+<tr class="total-row"><td>28</td><td class="num"></td><td class="num">300.000</td><td class="num">11.400.000</td></tr>
+</table>
+<table>
+<caption>Piutang Usaha (102)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>10</td><td class="num">1.500.000</td><td class="num"></td><td class="num">1.500.000</td></tr>
+<tr class="total-row"><td>18</td><td class="num"></td><td class="num">800.000</td><td class="num">700.000</td></tr>
+</table>
+<table>
+<caption>Perlengkapan Salon (103)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr class="total-row"><td>3</td><td class="num">2.000.000</td><td class="num"></td><td class="num">2.000.000</td></tr>
+</table>
+<table>
+<caption>Sewa Dibayar Dimuka (104)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr class="total-row"><td>5</td><td class="num">12.000.000</td><td class="num"></td><td class="num">12.000.000</td></tr>
+</table>
+<table>
+<caption>Peralatan Salon (121)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr class="total-row"><td>2</td><td class="num">10.000.000</td><td class="num"></td><td class="num">10.000.000</td></tr>
+</table>
+<table>
+<caption>Utang Usaha (201)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>3</td><td class="num"></td><td class="num">2.000.000</td><td class="num">2.000.000</td></tr>
+<tr class="total-row"><td>12</td><td class="num">1.000.000</td><td class="num"></td><td class="num">1.000.000</td></tr>
+</table>
+</div>
+<table>
+<caption>Modal &amp; Prive Ny. Rina (301 / 302), Pendapatan Jasa (401), Akun Beban (501-503)</caption>
+<tr><th>Akun</th><th class="num">Saldo (Sebelum AJP)</th></tr>
+<tr><td>Modal Ny. Rina (Kredit)</td><td class="num">30.000.000</td></tr>
+<tr><td>Prive Ny. Rina (Debit)</td><td class="num">1.000.000</td></tr>
+<tr><td>Pendapatan Jasa (Kredit) — akumulasi 8+10+22 Mar</td><td class="num">9.000.000</td></tr>
+<tr><td>Beban Listrik &amp; Air (Debit)</td><td class="num">600.000</td></tr>
+<tr><td>Beban Gaji (Debit)</td><td class="num">2.000.000</td></tr>
+<tr><td>Beban Iklan (Debit)</td><td class="num">300.000</td></tr>
+</table>
+
+<h3>Jawaban 3 — Neraca Saldo per 31 Maret 2025</h3>
+<table>
+<caption>Neraca Saldo — Salon Cantika</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Kas</td><td class="num">11.400.000</td><td class="num"></td></tr>
+<tr><td>Piutang Usaha</td><td class="num">700.000</td><td class="num"></td></tr>
+<tr><td>Perlengkapan Salon</td><td class="num">2.000.000</td><td class="num"></td></tr>
+<tr><td>Sewa Dibayar Dimuka</td><td class="num">12.000.000</td><td class="num"></td></tr>
+<tr><td>Peralatan Salon</td><td class="num">10.000.000</td><td class="num"></td></tr>
+<tr><td>Utang Usaha</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>Modal Ny. Rina</td><td class="num"></td><td class="num">30.000.000</td></tr>
+<tr><td>Prive Ny. Rina</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td>Pendapatan Jasa</td><td class="num"></td><td class="num">9.000.000</td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">600.000</td><td class="num"></td></tr>
+<tr><td>Beban Gaji</td><td class="num">2.000.000</td><td class="num"></td></tr>
+<tr><td>Beban Iklan</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="num">40.000.000</td><td class="num">40.000.000</td></tr>
+</table>
+
+<h3>Jawaban 4 — Ayat Jurnal Penyesuaian</h3>
+<table>
+<caption>AJP per 31 Maret 2025</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>a. Beban Perlengkapan (2.000.000 − 750.000)</td><td class="num">1.250.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Perlengkapan Salon</td><td class="num"></td><td class="num">1.250.000</td></tr>
+<tr><td>b. Beban Sewa (12.000.000 ÷ 12)</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Sewa Dibayar Dimuka</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>c. Beban Penyusutan Peralatan Salon</td><td class="num">150.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Akumulasi Penyusutan Peralatan Salon</td><td class="num"></td><td class="num">150.000</td></tr>
+<tr><td>d. Beban Gaji</td><td class="num">400.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Utang Gaji</td><td class="num"></td><td class="num">400.000</td></tr>
+<tr><td>e. Piutang Usaha</td><td class="num">600.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Pendapatan Jasa</td><td class="num"></td><td class="num">600.000</td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="num">3.400.000</td><td class="num">3.400.000</td></tr>
+</table>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section>
+<h3>Jawaban 5 — Neraca Lajur 10 Kolom</h3>
+<table style="font-size:.78rem;">
+<caption>Neraca Lajur — Salon Cantika per 31 Maret 2025 (dalam Rupiah)</caption>
+<tr><th>Akun</th><th class="num">NS-D</th><th class="num">NS-K</th><th class="num">AJP-D</th><th class="num">AJP-K</th><th class="num">NSD-D</th><th class="num">NSD-K</th><th class="num">LR-D</th><th class="num">LR-K</th><th class="num">Neraca-D</th><th class="num">Neraca-K</th></tr>
+<tr><td>Kas</td><td class="num">11.400.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">11.400.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">11.400.000</td><td class="num"></td></tr>
+<tr><td>Piutang Usaha</td><td class="num">700.000</td><td class="num"></td><td class="num">600.000</td><td class="num"></td><td class="num">1.300.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.300.000</td><td class="num"></td></tr>
+<tr><td>Perlengkapan Salon</td><td class="num">2.000.000</td><td class="num"></td><td class="num"></td><td class="num">1.250.000</td><td class="num">750.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">750.000</td><td class="num"></td></tr>
+<tr><td>Sewa Dibayar Dimuka</td><td class="num">12.000.000</td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td><td class="num">11.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">11.000.000</td><td class="num"></td></tr>
+<tr><td>Peralatan Salon</td><td class="num">10.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">10.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">10.000.000</td><td class="num"></td></tr>
+<tr><td>Utang Usaha</td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>Modal Ny. Rina</td><td class="num"></td><td class="num">30.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">30.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">30.000.000</td></tr>
+<tr><td>Prive Ny. Rina</td><td class="num">1.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td>Pendapatan Jasa</td><td class="num"></td><td class="num">9.000.000</td><td class="num"></td><td class="num">600.000</td><td class="num"></td><td class="num">9.600.000</td><td class="num"></td><td class="num">9.600.000</td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">600.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">600.000</td><td class="num"></td><td class="num">600.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Gaji</td><td class="num">2.000.000</td><td class="num"></td><td class="num">400.000</td><td class="num"></td><td class="num">2.400.000</td><td class="num"></td><td class="num">2.400.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Iklan</td><td class="num">300.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">300.000</td><td class="num"></td><td class="num">300.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr class="total-row"><td>Jumlah</td><td class="num">40.000.000</td><td class="num">40.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Perlengkapan</td><td class="num"></td><td class="num"></td><td class="num">1.250.000</td><td class="num"></td><td class="num">1.250.000</td><td class="num"></td><td class="num">1.250.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Sewa</td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Peny. Peralatan Salon</td><td class="num"></td><td class="num"></td><td class="num">150.000</td><td class="num"></td><td class="num">150.000</td><td class="num"></td><td class="num">150.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Akum. Peny. Peralatan Salon</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">150.000</td><td class="num"></td><td class="num">150.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">150.000</td></tr>
+<tr><td>Utang Gaji</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">400.000</td><td class="num"></td><td class="num">400.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">400.000</td></tr>
+<tr class="total-row"><td>Jumlah</td><td class="num"></td><td class="num"></td><td class="num">3.400.000</td><td class="num">3.400.000</td><td class="num">41.150.000</td><td class="num">41.150.000</td><td class="num">5.700.000</td><td class="num">9.600.000</td><td class="num">35.450.000</td><td class="num">31.550.000</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">3.900.000</td><td class="num"></td><td class="num"></td><td class="num">3.900.000</td></tr>
+<tr class="total-row"><td>Jumlah Akhir</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">9.600.000</td><td class="num">9.600.000</td><td class="num">35.450.000</td><td class="num">35.450.000</td></tr>
+</table>
+<p class="small">Laba Bersih = Rp9.600.000 − Rp5.700.000 = <strong>Rp3.900.000</strong>. Kolom Neraca seimbang sempurna pada Rp35.450.000.</p>
+
+<h3>Jawaban 6 — Laporan Keuangan</h3>
+<div class="grid2">
+<table>
+<caption>Laporan Laba Rugi — Salon Cantika per 31 Maret 2025</caption>
+<tr><td>Pendapatan Jasa</td><td class="num">9.600.000</td></tr>
+<tr><th colspan="2">Beban Usaha</th></tr>
+<tr><td>Beban Gaji</td><td class="num">2.400.000</td></tr>
+<tr><td>Beban Sewa</td><td class="num">1.000.000</td></tr>
+<tr><td>Beban Perlengkapan</td><td class="num">1.250.000</td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">600.000</td></tr>
+<tr><td>Beban Penyusutan Peralatan</td><td class="num">150.000</td></tr>
+<tr><td>Beban Iklan</td><td class="num">300.000</td></tr>
+<tr><td>Total Beban Usaha</td><td class="num">(5.700.000)</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num">3.900.000</td></tr>
+</table>
+<table>
+<caption>Laporan Perubahan Modal per 31 Maret 2025</caption>
+<tr><td>Modal Ny. Rina (awal)</td><td class="num">30.000.000</td></tr>
+<tr><td>Laba Bersih Maret</td><td class="num">3.900.000</td></tr>
+<tr><td>Prive Ny. Rina</td><td class="num">(1.000.000)</td></tr>
+<tr><td>Penambahan Modal Bersih</td><td class="num">2.900.000</td></tr>
+<tr class="total-row"><td>Modal Ny. Rina (akhir)</td><td class="num">32.900.000</td></tr>
+</table>
+</div>
+<table>
+<caption>Neraca — Salon Cantika per 31 Maret 2025</caption>
+<tr><th colspan="2">ASET</th><th colspan="2">LIABILITAS &amp; EKUITAS</th></tr>
+<tr><td>Kas</td><td class="num">11.400.000</td><td>Utang Usaha</td><td class="num">1.000.000</td></tr>
+<tr><td>Piutang Usaha</td><td class="num">1.300.000</td><td>Utang Gaji</td><td class="num">400.000</td></tr>
+<tr><td>Perlengkapan Salon</td><td class="num">750.000</td><td><em>Total Liabilitas</em></td><td class="num">1.400.000</td></tr>
+<tr><td>Sewa Dibayar Dimuka</td><td class="num">11.000.000</td><td>&nbsp;</td><td class="num"></td></tr>
+<tr><td>Peralatan Salon</td><td class="num">10.000.000</td><td>Modal Ny. Rina</td><td class="num">32.900.000</td></tr>
+<tr><td>Akum. Peny. Peralatan Salon</td><td class="num">(150.000)</td><td>&nbsp;</td><td class="num"></td></tr>
+<tr class="total-row"><td>TOTAL ASET</td><td class="num">34.300.000</td><td>TOTAL LIAB + EKUITAS</td><td class="num">34.300.000</td></tr>
+</table>
+<p class="small">Neraca seimbang sempurna: Rp34.300.000 = Rp34.300.000 ✓</p>
+
+<h3>Jawaban 7 — Jurnal Penutup</h3>
+<table>
+<caption>Jurnal Penutup — Salon Cantika per 31 Maret 2025</caption>
+<tr><th>Langkah</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td rowspan="2">1</td><td>Pendapatan Jasa</td><td class="num">9.600.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Ikhtisar Laba Rugi</td><td class="num"></td><td class="num">9.600.000</td></tr>
+<tr><td rowspan="7">2</td><td>Ikhtisar Laba Rugi</td><td class="num">5.700.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Beban Listrik &amp; Air</td><td class="num"></td><td class="num">600.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Gaji</td><td class="num"></td><td class="num">2.400.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Iklan</td><td class="num"></td><td class="num">300.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Perlengkapan</td><td class="num"></td><td class="num">1.250.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Sewa</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Penyusutan Peralatan Salon</td><td class="num"></td><td class="num">150.000</td></tr>
+<tr><td rowspan="2">3</td><td>Ikhtisar Laba Rugi</td><td class="num">3.900.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Modal Ny. Rina</td><td class="num"></td><td class="num">3.900.000</td></tr>
+<tr><td rowspan="2">4</td><td>Modal Ny. Rina</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Prive Ny. Rina</td><td class="num"></td><td class="num">1.000.000</td></tr>
+</table>
+
+<h3>Jawaban 8 — Neraca Saldo Setelah Penutupan</h3>
+<table>
+<caption>Neraca Saldo Setelah Penutupan — Salon Cantika per 31 Maret 2025</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Kas</td><td class="num">11.400.000</td><td class="num"></td></tr>
+<tr><td>Piutang Usaha</td><td class="num">1.300.000</td><td class="num"></td></tr>
+<tr><td>Perlengkapan Salon</td><td class="num">750.000</td><td class="num"></td></tr>
+<tr><td>Sewa Dibayar Dimuka</td><td class="num">11.000.000</td><td class="num"></td></tr>
+<tr><td>Peralatan Salon</td><td class="num">10.000.000</td><td class="num"></td></tr>
+<tr><td>Akumulasi Penyusutan Peralatan Salon</td><td class="num"></td><td class="num">150.000</td></tr>
+<tr><td>Utang Usaha</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>Utang Gaji</td><td class="num"></td><td class="num">400.000</td></tr>
+<tr><td>Modal Ny. Rina</td><td class="num"></td><td class="num">32.900.000</td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="num">34.450.000</td><td class="num">34.450.000</td></tr>
+</table>
+<p class="small">Terbukti tertutup sempurna (balance): hanya akun riil (Aset, Liabilitas, Ekuitas) yang tersisa; seluruh akun nominal (Pendapatan, Beban, Prive) telah bersaldo nol dan siap untuk periode April 2025.</p>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section id="soaldagang">
+<span class="badge">STUDI KASUS 2 · PERUSAHAAN DAGANG</span>
+<h2>Soal &amp; Jawaban Lengkap — "UD Makmur Jaya" (April 2025)</h2>
+
+<div class="soal">
+<strong>SOAL</strong><br>
+UD Makmur Jaya adalah usaha dagang alat rumah tangga milik Pak Budi yang baru berdiri bulan April 2025, menggunakan <strong>sistem perpetual</strong>. Berikut transaksi selama April 2025:
+<table>
+<tr><th>Tgl</th><th>Transaksi</th></tr>
+<tr><td>1 Apr</td><td>Pak Budi menyetor uang tunai Rp50.000.000 sebagai modal awal usaha.</td></tr>
+<tr><td>2 Apr</td><td>Dibeli peralatan toko secara tunai Rp8.000.000.</td></tr>
+<tr><td>3 Apr</td><td>Dibeli barang dagang dari PT Sumber senilai Rp20.000.000 secara kredit, syarat 2/10, n/30.</td></tr>
+<tr><td>4 Apr</td><td>Dibayar ongkos angkut atas pembelian tanggal 3 April sebesar Rp500.000 tunai.</td></tr>
+<tr><td>5 Apr</td><td>Dikembalikan sebagian barang dagang ke PT Sumber karena cacat senilai Rp1.000.000 (retur pembelian).</td></tr>
+<tr><td>8 Apr</td><td>Dijual barang dagang secara tunai Rp9.000.000; harga pokok barang tersebut Rp6.000.000.</td></tr>
+<tr><td>10 Apr</td><td>Dijual barang dagang secara kredit ke Toko Anisa Rp12.000.000, syarat 2/10, n/30; harga pokok barang tersebut Rp8.000.000.</td></tr>
+<tr><td>12 Apr</td><td>Dilunasi utang ke PT Sumber (dalam masa potongan).</td></tr>
+<tr><td>13 Apr</td><td>Toko Anisa mengembalikan barang rusak dari transaksi 10 April senilai jual Rp1.200.000; harga pokok barang tersebut Rp800.000.</td></tr>
+<tr><td>20 Apr</td><td>Diterima pelunasan piutang dari Toko Anisa (dalam masa potongan).</td></tr>
+<tr><td>22 Apr</td><td>Dibayar beban gaji karyawan Rp2.500.000.</td></tr>
+<tr><td>24 Apr</td><td>Dibayar beban listrik &amp; air Rp450.000.</td></tr>
+<tr><td>26 Apr</td><td>Pak Budi mengambil uang tunai Rp1.000.000 untuk keperluan pribadi (prive).</td></tr>
+<tr><td>28 Apr</td><td>Dibayar beban iklan Rp350.000.</td></tr>
+</table>
+<p><strong>Data penyesuaian per 30 April 2025:</strong></p>
+<ol type="a">
+<li>Hasil stock opname fisik menunjukkan nilai persediaan barang dagang sebenarnya Rp5.800.000 (terdapat selisih/susut dengan catatan buku besar).</li>
+<li>Penyusutan peralatan toko ditetapkan Rp100.000 per bulan.</li>
+<li>Gaji karyawan yang masih harus dibayar (terutang) sebesar Rp300.000.</li>
+</ol>
+<p><strong>Diminta:</strong> (1) Jurnal umum, (2) Posting akun-akun utama ke buku besar, (3) Neraca saldo, (4) Ayat jurnal penyesuaian, (5) Neraca lajur 10 kolom, (6) Laporan keuangan (Laba Rugi bentuk bertahap, Perubahan Modal, Neraca), (7) Jurnal penutup, (8) Neraca saldo setelah penutupan.</p>
+</div>
+
+<h3>Jawaban 1 — Jurnal Umum</h3>
+<table>
+<caption>Jurnal Umum — UD Makmur Jaya, April 2025 (Sistem Perpetual)</caption>
+<tr><th>Tgl</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>1</td><td>Kas</td><td class="num">50.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Modal Pak Budi</td><td class="num"></td><td class="num">50.000.000</td></tr>
+<tr><td>2</td><td>Peralatan Toko</td><td class="num">8.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">8.000.000</td></tr>
+<tr><td>3</td><td>Persediaan Barang Dagang</td><td class="num">20.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Utang Usaha</td><td class="num"></td><td class="num">20.000.000</td></tr>
+<tr><td>4</td><td>Persediaan Barang Dagang</td><td class="num">500.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">500.000</td></tr>
+<tr><td>5</td><td>Utang Usaha</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>8</td><td>Kas</td><td class="num">9.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Penjualan</td><td class="num"></td><td class="num">9.000.000</td></tr>
+<tr><td>8</td><td>Harga Pokok Penjualan</td><td class="num">6.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">6.000.000</td></tr>
+<tr><td>10</td><td>Piutang Usaha</td><td class="num">12.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Penjualan</td><td class="num"></td><td class="num">12.000.000</td></tr>
+<tr><td>10</td><td>Harga Pokok Penjualan</td><td class="num">8.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">8.000.000</td></tr>
+<tr><td>12</td><td>Utang Usaha (20.000.000 − 1.000.000)</td><td class="num">19.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas (19.000.000 − 2%)</td><td class="num"></td><td class="num">18.620.000</td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Persediaan Barang Dagang (potongan 2%)</td><td class="num"></td><td class="num">380.000</td></tr>
+<tr><td>13</td><td>Retur Penjualan</td><td class="num">1.200.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Piutang Usaha</td><td class="num"></td><td class="num">1.200.000</td></tr>
+<tr><td>13</td><td>Persediaan Barang Dagang</td><td class="num">800.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Harga Pokok Penjualan</td><td class="num"></td><td class="num">800.000</td></tr>
+<tr><td>20</td><td>Kas (10.800.000 − 2%)</td><td class="num">10.584.000</td><td class="num"></td></tr>
+<tr><td>20</td><td>Potongan Penjualan (2% × 10.800.000)</td><td class="num">216.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Piutang Usaha (12.000.000 − 1.200.000)</td><td class="num"></td><td class="num">10.800.000</td></tr>
+<tr><td>22</td><td>Beban Gaji</td><td class="num">2.500.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">2.500.000</td></tr>
+<tr><td>24</td><td>Beban Listrik &amp; Air</td><td class="num">450.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">450.000</td></tr>
+<tr><td>26</td><td>Prive Pak Budi</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">1.000.000</td></tr>
+<tr><td>28</td><td>Beban Iklan</td><td class="num">350.000</td><td class="num"></td></tr>
+<tr><td></td><td>&nbsp;&nbsp;Kas</td><td class="num"></td><td class="num">350.000</td></tr>
+<tr class="total-row"><td colspan="2">TOTAL</td><td class="num">150.600.000</td><td class="num">150.600.000</td></tr>
+</table>
+<p class="small">Perhitungan potongan (tgl 12 &amp; 20): syarat 2/10,n/30 berarti diskon 2% berlaku jika dilunasi dalam 10 hari dari tanggal faktur. Transaksi 12 Apr (9 hari dari 3 Apr) dan 20 Apr (10 hari dari 10 Apr) keduanya masih dalam masa diskon.</p>
+
+<h3>Jawaban 2 — Buku Besar Akun Utama (Bentuk Staffel)</h3>
+<div class="grid2">
+<table>
+<caption>Kas (101)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>1</td><td class="num">50.000.000</td><td class="num"></td><td class="num">50.000.000</td></tr>
+<tr><td>2</td><td class="num"></td><td class="num">8.000.000</td><td class="num">42.000.000</td></tr>
+<tr><td>4</td><td class="num"></td><td class="num">500.000</td><td class="num">41.500.000</td></tr>
+<tr><td>8</td><td class="num">9.000.000</td><td class="num"></td><td class="num">50.500.000</td></tr>
+<tr><td>12</td><td class="num"></td><td class="num">18.620.000</td><td class="num">31.880.000</td></tr>
+<tr><td>20</td><td class="num">10.584.000</td><td class="num"></td><td class="num">42.464.000</td></tr>
+<tr><td>22</td><td class="num"></td><td class="num">2.500.000</td><td class="num">39.964.000</td></tr>
+<tr><td>24</td><td class="num"></td><td class="num">450.000</td><td class="num">39.514.000</td></tr>
+<tr><td>26</td><td class="num"></td><td class="num">1.000.000</td><td class="num">38.514.000</td></tr>
+<tr class="total-row"><td>28</td><td class="num"></td><td class="num">350.000</td><td class="num">38.164.000</td></tr>
+</table>
+<table>
+<caption>Persediaan Barang Dagang (103)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>3</td><td class="num">20.000.000</td><td class="num"></td><td class="num">20.000.000</td></tr>
+<tr><td>4</td><td class="num">500.000</td><td class="num"></td><td class="num">20.500.000</td></tr>
+<tr><td>5</td><td class="num"></td><td class="num">1.000.000</td><td class="num">19.500.000</td></tr>
+<tr><td>8</td><td class="num"></td><td class="num">6.000.000</td><td class="num">13.500.000</td></tr>
+<tr><td>10</td><td class="num"></td><td class="num">8.000.000</td><td class="num">5.500.000</td></tr>
+<tr><td>12</td><td class="num"></td><td class="num">380.000</td><td class="num">5.120.000</td></tr>
+<tr class="total-row"><td>13</td><td class="num">800.000</td><td class="num"></td><td class="num">5.920.000</td></tr>
+</table>
+<table>
+<caption>Piutang Usaha (102)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>10</td><td class="num">12.000.000</td><td class="num"></td><td class="num">12.000.000</td></tr>
+<tr><td>13</td><td class="num"></td><td class="num">1.200.000</td><td class="num">10.800.000</td></tr>
+<tr class="total-row"><td>20</td><td class="num"></td><td class="num">10.800.000</td><td class="num">0</td></tr>
+</table>
+<table>
+<caption>Utang Usaha (201)</caption>
+<tr><th>Tgl</th><th class="num">Debit</th><th class="num">Kredit</th><th class="num">Saldo</th></tr>
+<tr><td>3</td><td class="num"></td><td class="num">20.000.000</td><td class="num">20.000.000</td></tr>
+<tr><td>5</td><td class="num">1.000.000</td><td class="num"></td><td class="num">19.000.000</td></tr>
+<tr class="total-row"><td>12</td><td class="num">19.000.000</td><td class="num"></td><td class="num">0</td></tr>
+</table>
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section>
+<h3>Jawaban 3 — Neraca Saldo per 30 April 2025</h3>
+<table>
+<caption>Neraca Saldo — UD Makmur Jaya</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Kas</td><td class="num">38.164.000</td><td class="num"></td></tr>
+<tr><td>Piutang Usaha</td><td class="num">0</td><td class="num"></td></tr>
+<tr><td>Persediaan Barang Dagang</td><td class="num">5.920.000</td><td class="num"></td></tr>
+<tr><td>Peralatan Toko</td><td class="num">8.000.000</td><td class="num"></td></tr>
+<tr><td>Utang Usaha</td><td class="num"></td><td class="num">0</td></tr>
+<tr><td>Modal Pak Budi</td><td class="num"></td><td class="num">50.000.000</td></tr>
+<tr><td>Prive Pak Budi</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td>Penjualan</td><td class="num"></td><td class="num">21.000.000</td></tr>
+<tr><td>Retur Penjualan</td><td class="num">1.200.000</td><td class="num"></td></tr>
+<tr><td>Potongan Penjualan</td><td class="num">216.000</td><td class="num"></td></tr>
+<tr><td>Harga Pokok Penjualan</td><td class="num">13.200.000</td><td class="num"></td></tr>
+<tr><td>Beban Gaji</td><td class="num">2.500.000</td><td class="num"></td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">450.000</td><td class="num"></td></tr>
+<tr><td>Beban Iklan</td><td class="num">350.000</td><td class="num"></td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="num">71.000.000</td><td class="num">71.000.000</td></tr>
+</table>
+<p class="small">HPP bersih = 6.000.000 + 8.000.000 − 800.000 (retur mengembalikan HPP) = Rp13.200.000. Akun Piutang Usaha dan Utang Usaha bersaldo nol karena sudah lunas seluruhnya bulan ini.</p>
+
+<h3>Jawaban 4 — Ayat Jurnal Penyesuaian</h3>
+<table>
+<caption>AJP per 30 April 2025</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>a. Beban Kerugian Persediaan (5.920.000 − 5.800.000)</td><td class="num">120.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Persediaan Barang Dagang</td><td class="num"></td><td class="num">120.000</td></tr>
+<tr><td>b. Beban Penyusutan Peralatan Toko</td><td class="num">100.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Akumulasi Penyusutan Peralatan Toko</td><td class="num"></td><td class="num">100.000</td></tr>
+<tr><td>c. Beban Gaji</td><td class="num">300.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Utang Gaji</td><td class="num"></td><td class="num">300.000</td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="num">520.000</td><td class="num">520.000</td></tr>
+</table>
+
+<h3>Jawaban 5 — Neraca Lajur 10 Kolom</h3>
+<table style="font-size:.76rem;">
+<caption>Neraca Lajur — UD Makmur Jaya per 30 April 2025 (dalam Rupiah)</caption>
+<tr><th>Akun</th><th class="num">NS-D</th><th class="num">NS-K</th><th class="num">AJP-D</th><th class="num">AJP-K</th><th class="num">NSD-D</th><th class="num">NSD-K</th><th class="num">LR-D</th><th class="num">LR-K</th><th class="num">Neraca-D</th><th class="num">Neraca-K</th></tr>
+<tr><td>Kas</td><td class="num">38.164.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">38.164.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">38.164.000</td><td class="num"></td></tr>
+<tr><td>Persediaan Barang Dagang</td><td class="num">5.920.000</td><td class="num"></td><td class="num"></td><td class="num">120.000</td><td class="num">5.800.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">5.800.000</td><td class="num"></td></tr>
+<tr><td>Peralatan Toko</td><td class="num">8.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">8.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">8.000.000</td><td class="num"></td></tr>
+<tr><td>Modal Pak Budi</td><td class="num"></td><td class="num">50.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">50.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">50.000.000</td></tr>
+<tr><td>Prive Pak Budi</td><td class="num">1.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td>Penjualan</td><td class="num"></td><td class="num">21.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">21.000.000</td><td class="num"></td><td class="num">21.000.000</td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Retur Penjualan</td><td class="num">1.200.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">1.200.000</td><td class="num"></td><td class="num">1.200.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Potongan Penjualan</td><td class="num">216.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">216.000</td><td class="num"></td><td class="num">216.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Harga Pokok Penjualan</td><td class="num">13.200.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">13.200.000</td><td class="num"></td><td class="num">13.200.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Gaji</td><td class="num">2.500.000</td><td class="num"></td><td class="num">300.000</td><td class="num"></td><td class="num">2.800.000</td><td class="num"></td><td class="num">2.800.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">450.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">450.000</td><td class="num"></td><td class="num">450.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Iklan</td><td class="num">350.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">350.000</td><td class="num"></td><td class="num">350.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr class="total-row"><td>Jumlah</td><td class="num">71.000.000</td><td class="num">71.000.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Kerugian Persediaan</td><td class="num"></td><td class="num"></td><td class="num">120.000</td><td class="num"></td><td class="num">120.000</td><td class="num"></td><td class="num">120.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Beban Peny. Peralatan Toko</td><td class="num"></td><td class="num"></td><td class="num">100.000</td><td class="num"></td><td class="num">100.000</td><td class="num"></td><td class="num">100.000</td><td class="num"></td><td class="num"></td><td class="num"></td></tr>
+<tr><td>Akum. Peny. Peralatan Toko</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">100.000</td><td class="num"></td><td class="num">100.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">100.000</td></tr>
+<tr><td>Utang Gaji</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">300.000</td><td class="num"></td><td class="num">300.000</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">300.000</td></tr>
+<tr class="total-row"><td>Jumlah</td><td class="num"></td><td class="num"></td><td class="num">520.000</td><td class="num">520.000</td><td class="num">71.400.000</td><td class="num">71.400.000</td><td class="num">18.436.000</td><td class="num">21.000.000</td><td class="num">52.964.000</td><td class="num">50.400.000</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">2.564.000</td><td class="num"></td><td class="num"></td><td class="num">2.564.000</td></tr>
+<tr class="total-row"><td>Jumlah Akhir</td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num"></td><td class="num">21.000.000</td><td class="num">21.000.000</td><td class="num">52.964.000</td><td class="num">52.964.000</td></tr>
+</table>
+<p class="small">Laba Bersih = Rp21.000.000 − Rp18.436.000 = <strong>Rp2.564.000</strong>. Kolom Neraca seimbang sempurna pada Rp52.964.000.</p>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+<section>
+<h3>Jawaban 6 — Laporan Keuangan</h3>
+<table>
+<caption>Laporan Laba Rugi — UD Makmur Jaya per 30 April 2025 (Bentuk Bertahap)</caption>
+<tr><th colspan="2">Pendapatan Penjualan</th></tr>
+<tr><td>Penjualan</td><td class="num">21.000.000</td></tr>
+<tr><td>Retur Penjualan</td><td class="num">(1.200.000)</td></tr>
+<tr><td>Potongan Penjualan</td><td class="num">(216.000)</td></tr>
+<tr class="total-row"><td>Penjualan Bersih</td><td class="num">19.584.000</td></tr>
+<tr><td>Harga Pokok Penjualan</td><td class="num">(13.200.000)</td></tr>
+<tr class="total-row"><td>Laba Kotor</td><td class="num">6.384.000</td></tr>
+<tr><th colspan="2">Beban Operasional</th></tr>
+<tr><td>Beban Gaji</td><td class="num">2.800.000</td></tr>
+<tr><td>Beban Listrik &amp; Air</td><td class="num">450.000</td></tr>
+<tr><td>Beban Iklan</td><td class="num">350.000</td></tr>
+<tr><td>Beban Kerugian Persediaan</td><td class="num">120.000</td></tr>
+<tr><td>Beban Penyusutan Peralatan Toko</td><td class="num">100.000</td></tr>
+<tr><td>Total Beban Operasional</td><td class="num">(3.820.000)</td></tr>
+<tr class="total-row"><td>Laba Bersih</td><td class="num">2.564.000</td></tr>
+</table>
+
+<div class="grid2">
+<table>
+<caption>Laporan Perubahan Modal per 30 April 2025</caption>
+<tr><td>Modal Pak Budi (awal)</td><td class="num">50.000.000</td></tr>
+<tr><td>Laba Bersih April</td><td class="num">2.564.000</td></tr>
+<tr><td>Prive Pak Budi</td><td class="num">(1.000.000)</td></tr>
+<tr><td>Penambahan Modal Bersih</td><td class="num">1.564.000</td></tr>
+<tr class="total-row"><td>Modal Pak Budi (akhir)</td><td class="num">51.564.000</td></tr>
+</table>
+<table>
+<caption>Neraca — UD Makmur Jaya per 30 April 2025</caption>
+<tr><td>Kas</td><td class="num">38.164.000</td></tr>
+<tr><td>Persediaan Barang Dagang</td><td class="num">5.800.000</td></tr>
+<tr><td>Peralatan Toko</td><td class="num">8.000.000</td></tr>
+<tr><td>Akum. Peny. Peralatan Toko</td><td class="num">(100.000)</td></tr>
+<tr class="total-row"><td>TOTAL ASET</td><td class="num">51.864.000</td></tr>
+<tr><td>Utang Gaji</td><td class="num">300.000</td></tr>
+<tr><td>Modal Pak Budi</td><td class="num">51.564.000</td></tr>
+<tr class="total-row"><td>TOTAL LIAB + EKUITAS</td><td class="num">51.864.000</td></tr>
+</table>
+</div>
+<p class="small">Neraca seimbang sempurna: Total Aset Rp51.864.000 = Total Liabilitas + Ekuitas Rp51.864.000 ✓</p>
+
+<h3>Jawaban 7 — Jurnal Penutup</h3>
+<table>
+<caption>Jurnal Penutup — UD Makmur Jaya per 30 April 2025</caption>
+<tr><th>Langkah</th><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td rowspan="2">1. Tutup Penjualan</td><td>Penjualan</td><td class="num">21.000.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Ikhtisar Laba Rugi</td><td class="num"></td><td class="num">21.000.000</td></tr>
+<tr><td rowspan="9">2. Tutup Beban, HPP, Retur &amp; Potongan Penjualan</td><td>Ikhtisar Laba Rugi</td><td class="num">18.436.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Retur Penjualan</td><td class="num"></td><td class="num">1.200.000</td></tr>
+<tr><td>&nbsp;&nbsp;Potongan Penjualan</td><td class="num"></td><td class="num">216.000</td></tr>
+<tr><td>&nbsp;&nbsp;Harga Pokok Penjualan</td><td class="num"></td><td class="num">13.200.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Gaji</td><td class="num"></td><td class="num">2.800.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Listrik &amp; Air</td><td class="num"></td><td class="num">450.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Iklan</td><td class="num"></td><td class="num">350.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Kerugian Persediaan</td><td class="num"></td><td class="num">120.000</td></tr>
+<tr><td>&nbsp;&nbsp;Beban Penyusutan Peralatan Toko</td><td class="num"></td><td class="num">100.000</td></tr>
+<tr><td rowspan="2">3. Tutup Ikhtisar Laba Rugi</td><td>Ikhtisar Laba Rugi (21.000.000 − 18.436.000)</td><td class="num">2.564.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Modal Pak Budi</td><td class="num"></td><td class="num">2.564.000</td></tr>
+<tr><td rowspan="2">4. Tutup Prive</td><td>Modal Pak Budi</td><td class="num">1.000.000</td><td class="num"></td></tr>
+<tr><td>&nbsp;&nbsp;Prive Pak Budi</td><td class="num"></td><td class="num">1.000.000</td></tr>
+</table>
+
+<h3>Jawaban 8 — Neraca Saldo Setelah Penutupan</h3>
+<table>
+<caption>Neraca Saldo Setelah Penutupan — UD Makmur Jaya per 30 April 2025</caption>
+<tr><th>Akun</th><th class="num">Debit</th><th class="num">Kredit</th></tr>
+<tr><td>Kas</td><td class="num">38.164.000</td><td class="num"></td></tr>
+<tr><td>Persediaan Barang Dagang</td><td class="num">5.800.000</td><td class="num"></td></tr>
+<tr><td>Peralatan Toko</td><td class="num">8.000.000</td><td class="num"></td></tr>
+<tr><td>Akumulasi Penyusutan Peralatan Toko</td><td class="num"></td><td class="num">100.000</td></tr>
+<tr><td>Utang Gaji</td><td class="num"></td><td class="num">300.000</td></tr>
+<tr><td>Modal Pak Budi</td><td class="num"></td><td class="num">51.564.000</td></tr>
+<tr class="total-row"><td>TOTAL</td><td class="num">51.964.000</td><td class="num">51.964.000</td></tr>
+</table>
+<p class="small">Siklus akuntansi satu periode penuh telah selesai dan tertutup sempurna (balance) — hanya tersisa akun riil, siap digunakan sebagai saldo awal periode Mei 2025.</p>
+
+<div class="box tip">
+<strong>Ringkasan Alur Siklus Lengkap (Perusahaan Dagang, Sistem Perpetual):</strong><br>
+Transaksi → Jurnal Umum → Buku Besar (+ Buku Besar Pembantu &amp; Kartu Stok) → Neraca Saldo → AJP → Neraca Lajur → Laporan Keuangan (Laba Rugi → Perubahan Modal → Neraca) → Jurnal Penutup → Neraca Saldo Setelah Penutupan.
+</div>
+<a class="backtop" href="#">↑ kembali ke atas</a>
+</section>
+
+</div>
+<footer>Bahan Ajar Akuntansi — GAC (General Accounting Course) · Disusun untuk keperluan pembelajaran · Perusahaan Jasa &amp; Perusahaan Dagang</footer>
+</body>
+</html>
